@@ -1,0 +1,50 @@
+.menuBarOne{
+    display: flex;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    gap: 10px;
+}
+.menuBarTwo{
+    display: flex;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    gap: 10px;
+}
+.menuBarContentOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+.menuBarContentTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 8px;
+}
+.menuBarMain{
+    padding: 12px 0 4px 8px;
+}
+.menuBarOne h4{
+    font-size: 10px;
+    font-family: semiBold;
+}
+.menuBarTwo h4{
+    font-size: 10px;
+    font-family: semiBold;
+}
+.menuBarOne img{
+  height: 51px;
+}
+.menuBarTwo img{
+    height: 51px;
+}
+
+@media screen  and (min-width:1024px){
+    .menuBarMain{
+        display: none;
+    }
+}

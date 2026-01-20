@@ -1,0 +1,45 @@
+.SubProduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 10px;
+}
+.SubProductpropImage img{
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+.SubProductpropImage {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-radius: 15px;
+}
+.SubProductpropName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.SubProductpropName h3{
+    font-size: 16px;
+    font-family: InterBold;
+    padding:0 8px;
+}
+.SubproductProp{
+    background-color: #D7D7D7;
+    padding: 20px 12px;
+    margin:12px 16px;
+    border-radius: 15px;
+}
+.SubproductProp h2{
+    font-size: 17px;
+    padding: 8px;
+    font-family: InterBold;
+}
+
+@media screen and (min-width:1024px){
+    .SubproductProp{
+        display: none;
+    }
+}

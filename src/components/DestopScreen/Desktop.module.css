@@ -1,0 +1,11 @@
+.DesktopCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+    row-gap: 15px;
+    background-color: rgba(241, 242, 244, 1.00);
+    padding: 20px;
+}
+.DesktopCard img{
+    width: 100%;
+}

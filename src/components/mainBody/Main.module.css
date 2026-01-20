@@ -1,0 +1,11 @@
+
+.MainBody{
+    max-width: 964px;
+    margin: 0 auto;
+}
+@media screen and (min-width:1024px) {
+    .MainBody{
+        max-width: 100%;
+    }
+    
+}

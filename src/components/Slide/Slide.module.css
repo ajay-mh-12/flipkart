@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Slideimage{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 0 20px;
+    scrollbar-width: none;
+    width: 100%;
+}
+.Slideimage img{
+    /* height: 168px; */
+    scroll-snap-align: center;
+    border-radius: 16px;
+    width: 100%;
+}
+.SlideBarMain{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.SlideBarClose{
+    width: 12px;
+    height: 4px;
+    background-color: #c5c7c5;
+    overflow: hidden;
+    /* animation-timing-function: ; */
+} 
+.SlideBarOpen{
+    width: 48px;
+    height: 4px;
+    background-color: #c5c7c5;
+    position: relative;
+}
+
+
+
+.SlideBarOpen::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    animation: fillBar 3s ease-in-out infinite;
+    /* animation-delay: inherit; */
+}
+@keyframes fillBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Slideimage{
+        display: none;
+    }
+    .SlideBarMain{
+        display: none;
+    }
+}

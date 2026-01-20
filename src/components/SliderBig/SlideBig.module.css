@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.SliderBigScreen{
+    overflow-y: scroll;
+    width: 100%;
+    /* gap: 20px; */
+    display: none;
+    position: relative;
+}
+.SlideBarBig{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+}
+.SlideBarBigClose{
+    height: 4px;
+    width: 25px;
+    background-color: #ab9c9c;
+}
+.SlideBigBarOpen{
+    height: 4px;
+    width: 55px;
+    background-color: #ab9c9c;
+    position: relative;
+    
+}
+.SlideBigBarOpen::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    /* width: 100%; */
+    background-color: rgb(0, 0, 0);
+    animation: fillBar 3s linear infinite ;
+}
+@keyframes fillBar {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.ArrowRightBtn{
+    background-color:white;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+.ArrowLeftBtn img{
+    width: 100%;
+    transform: rotate(180deg);
+    height: 30px;
+}
+.ArrowRightBtn img{
+    width: 100%;
+    height: 30px;
+}
+.ArrowLeftBtn{
+    background-color: white;
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.sliderMain{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (min-width:1024px) {
+
+    .SliderBigScreen{
+        display: flex;
+        max-width: 1600px;
+    }
+    .SliderBigScreen img {
+        width: 100%;
+    }
+    .SlideBarBig{
+        display: block;
+        display: flex;
+    }
+    .ArrowRightBtn{
+        display: block;
+        display: flex;
+    }
+    .ArrowLeftBtn{
+        display: block;
+        display: flex;
+    }
+   
+}

@@ -1,0 +1,47 @@
+import React from "react";
+import Style from "./Desktop.module.css"
+import Headset from "./DesktopImage/Headset.webp"
+import Mobile from "./DesktopImage/mobile.webp"
+import Speaker from "./DesktopImage/Speaker.webp"
+import Tv from "./DesktopImage/Tv.webp"
+import WashingMachin from "./DesktopImage/washingmachin.webp"
+import Waterfilter from "./DesktopImage/WaterFilter.webp"
+function DesktopCard(){
+    const DesktopImage = [
+        {
+            id:1,
+            image:Headset
+        },
+        {
+            id:2,
+            image:Mobile
+        },
+        {
+            id:3,
+            image:Speaker
+        },
+        {
+            id:4,
+            image:Tv
+        },
+        {
+            id:5,
+            image:WashingMachin
+        },
+        {
+            id:6,
+            image:Waterfilter
+        }
+    ]
+
+    return(
+        <>
+        <div className={Style.DesktopCard}>
+        {DesktopImage.map((pro)=>{
+            return <img src={pro.image} alt="" />
+        })}
+        </div>
+        </>
+    )
+}
+export default DesktopCard

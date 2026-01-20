@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: regular;
+    src: url(./assets/Inter-Regular.woff2);
+}
+@font-face{
+    font-family: regular1;
+    src: url(./assets/roboto-regular.woff2)
+}
+@font-face{
+    font-family: semiBold;
+    src: url(./assets/Inter-SemiBold.woff2);
+}
+@font-face{
+    font-family: InterBold;
+    src: url(./assets/Inter-Bold.woff2);
+}
