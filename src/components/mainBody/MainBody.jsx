@@ -7,6 +7,7 @@ import MenuBarBig from '../MenuBarBig/MenuBarBig';
 import Discount from '../DiscountProduct/DiscountProduct';
 import DiscountProductSub from '../DiscountProductsub/DiscountProductSub';
 import DesktopCard from '../DestopScreen/DesktopCard';
+import FlipFooter from '../FlipFooter/FlipFooter';
 
 function MainBody() {
     return (
@@ -19,6 +20,8 @@ function MainBody() {
           <Discount/>
           <DiscountProductSub/>
           <DesktopCard/>
+          <DesktopCard/>
+          <FlipFooter/>
             
         </div>
                   
