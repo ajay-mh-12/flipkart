@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./FlipFooter.module.css"
 import BecomeSeller from "./FlipFooterImage/Become a Seller-1.svg"
-import FaceBook from "./FlipFooterImage/facebook.svg"
+import FaceBook from "./FlipFooterImage/Facebook.svg"
 import GiftCard from "./FlipFooterImage/Gift Cards-1.svg"
 import HelpCenter from "./FlipFooterImage/Help Center.svg"
 import Instagram from "./FlipFooterImage/Instagram.svg"
@@ -123,11 +123,8 @@ function FlipFooter(){
                 <span>
                     <img src={Images} alt="" />
                    
-                </span>
-
+                </span> 
             </div>
-
-
         </div>
         </>
     )
