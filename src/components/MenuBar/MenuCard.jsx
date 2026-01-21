@@ -14,6 +14,7 @@ import MenuImage11 from "./MenuBarImages/image11.webp"
 import MenuImage12 from "./MenuBarImages/image13.webp"
 import MenuImage13 from "./MenuBarImages/image14.webp"
 import MenuImage14 from "./MenuBarImages/image15.webp"
+import { useNavigate } from 'react-router-dom';
 
 function MenuCard() {
 
@@ -108,11 +109,11 @@ function MenuCard() {
             }
         ]
     ]
-
+ const navigate=useNavigate()
     return (
         <>
             <div className={StyleMenu.menuBarMain}>
-            <div className={StyleMenu.menuBarOne}>
+            <div className={StyleMenu.menuBarOne}  onClick={()=>navigate("/productList")}>
                 {MenuCard[0].map((pro, index)=>{
                     return <div key={index} className={StyleMenu.menuBarContentOne}><img key={pro.id} src={pro.image} alt="" /> <h4>{pro.name}</h4></div>
                 })}

@@ -1,0 +1,131 @@
+.HeadsetHeaderOne div:nth-child(2) img{
+    height: 24px;
+    width: fit-content;
+}
+.HeadsetHeaderOne{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.HeadsetHeaderTwo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.HeadsetHeader{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 10px;
+}
+.HeadsetHeaderOne p{
+    font-size: 16px;
+    font-family: regular1;
+}
+.HeadsetHeaderTwo p{
+    font-size: 16px;
+    font-family: regular1;
+}
+.HeadsetHeaderTwo div:nth-child(2){
+    padding-right: 15px;
+}
+.HeadsetSort{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    height: 48px;
+}
+.HeadsetFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 48px;
+}
+.HeadsetTwo{
+    display: flex;
+    justify-content: space-evenly;
+    height: 48px;
+    border-bottom: 1px solid rgb(220, 223, 230);
+    border-top: 1px solid rgb(220, 223, 230);
+    background-color:  rgb(255, 255, 255);
+}
+.HeadsetSort h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-family: semiBold;
+    color: rgb(17, 17, 18);
+}
+.HeadsetFilter h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-family: semiBold;
+    color: rgb(17, 17, 17);
+}
+.BorderHeadset{
+    height: 16px;
+    width: 1px;
+    background-color: rgb(213, 215, 219);
+    position: relative;
+    top: 14px;
+}
+.HeadsetHeaderDetails img{
+    height: 32px;
+    width: fit-content;
+}
+.HeadsetHeaderDetails{
+    display: flex;
+    padding: 0px 11px;
+    /* justify-content:first baseline; */
+    flex-basis: auto;
+    width: 100%;
+}
+.HeadsetHeaderDetails p{
+    font-size: 12px;
+    font-family: regular1;
+    color: rgb(17, 17, 18);
+    line-height: 16px;
+}
+.HeadsetHeaderDetails div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 0 4px;
+    border: 1px solid rgb(224, 224, 224);
+    margin: 8px 4px 0px 4px;
+    border-radius: 4px;
+    width: 100%;
+    gap: 5px;
+}
+.HeadsetHeaderDetails div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 0 4px;
+    border: 1px solid rgb(224, 224, 224);
+    margin: 8px 4px 0px 4px;
+    border-radius: 4px;
+    width: 100%;
+    gap: 5px;
+}
+.HeadsetHeaderDetails div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 0 4px;
+    border: 1px solid rgb(224, 224, 224);
+    margin: 8px 4px 0px 4px;
+    border-radius: 4px;
+    width: 100%;
+    gap: 5px;  
+}

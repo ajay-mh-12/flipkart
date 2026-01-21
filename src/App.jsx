@@ -1,18 +1,31 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import MainBody from "./components/mainBody/MainBody";
+import Headset from "./components/HeadsetProduct/Headset";
 
-import './App.css'
-import Header from './components/Header/Header'
-import MainBody from './components/mainBody/MainBody'
 function App() {
-
-
   return (
-    <>
-    <Header/>
-    <MainBody/>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route
+          path="/"
+          element={
+            <>
+              <Header></Header>
+              <MainBody />
+            </>
+          }
+        />
+        
+
+        {/* Product page */}
+        <Route path="/productList" element={
+          <Headset />} />
+      </Routes>
+    </BrowserRouter>
     
-      
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
