@@ -1,0 +1,95 @@
+
+[
+    {
+        "id":1,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/shopsy-headphone/x/9/k/bluetooth-yes-tws-nexx-arham-original-imagyvcgugzpkz98.jpeg?q=60&crop=false",
+        "name":"Blaupunkt",
+        "price":"₹1500",
+        "discount":3000,
+        "subname":"Buds VS102 with 50 Hrs p..",
+        "presentage":82
+    },
+    {
+        "id":2,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/d/q/r/-original-imagp6skt77zsdjt.jpeg?q=60&crop=false",
+        "name":"Boston Levin",
+        "price":"₹699",
+        "discount":2000,
+        "subname":"WHITE-ANC-EARBUDS BI..",
+        "presentage":66
+
+    },
+    {
+        "id":3,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/v/p/3/-original-imah8bfrrurageu2.jpeg?q=60&crop=false",
+        "name":"OnePlus",
+        "price":"₹5487",
+        "discount":8000,
+        "subname":"Airdopes Alpha,35H Battle..",
+        "presentage":85
+    },
+    {
+        "id":4,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/r/c/j/-original-imahae3ea2j4mhkt.jpeg?q=60&crop=false",
+        "name":"NEXX ARHAM",
+        "price":"₹2500",
+        "discount":4000,
+        "subname":"Airdopes Alpha,35H Batte..",
+        "presentage":87
+    },
+    {
+        "id":5,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/n/i/m/-original-imahfczv4qmuxwe6.jpeg?q=60&crop=false",
+        "name":"Noise",
+        "price":"₹3452",
+        "discount":5000,
+        "subname":"BS ultrapood Bluetooth G.",
+        "presentage":89
+    },
+    {
+        "id":6,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/u/4/d/-original-imah9x5amfhetsmz.jpeg?q=60&crop=false",
+        "name":"JUSTSYNC",
+        "price":"₹1230",
+        "discount":3000,
+        "subname":"Airdopes 161,Adv 4Mic E",
+        "presentage":45
+    },
+    {
+        "id":7,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/s/r/9/bs-ultrapood-bullstorm-original-imahcus46hzumv9a.jpeg?q=60&crop=false",
+        "name":"boat",
+        "price":"₹1400",
+        "discount":4000,
+        "subname":"NB121 Pods Upto 40 Hour..",
+        "presentage":63
+    },
+    {
+        "id":8,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/c/1/z/-original-imahjrjh6zhhfxqv.jpeg?q=60&crop=false",
+        "name":"Huawei",
+        "price":"₹13999",
+        "discount":20999,
+        "subname":"(2nd generation Deep Au)",
+        "presentage":75
+    },
+    {
+        "id":9,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/d/u/0/nb121-pods-upto-40-hours-playtime-type-c-fast-charging-dual-original-imahh4a72k7jbk2h.jpeg?q=60&crop=false",
+        "name":"BULLSTROM",
+        "price":"₹785",
+        "discount":1200,
+        "subname":"Kraken X1 with Battery Dis..",
+        "presentage":22
+    },
+    {
+        "id":10,
+        "image":"https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/r/p/e/new-edition-tws-m19-gaming-earbuds-bluetooth-5-0-wireless-led-original-imaheczqsngzfrfj.jpeg?q=60&crop=false",
+        "name":"TECHBROS",
+        "price":"₹290",
+        "discount":500,
+        "subname":"ResonanceX OWS w/70H..",
+        "presentage":50
+    }
+    
+]
