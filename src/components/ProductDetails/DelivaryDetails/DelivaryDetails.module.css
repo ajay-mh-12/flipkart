@@ -1,0 +1,146 @@
+.DeliveryDetails div:nth-child(1) h1{
+    font-size: 17px;
+    font-family: InterBold;
+    margin: 20px 0px 8px 16px;
+}
+.location {
+    background-color: rgb(238, 247, 255);
+    padding: 12px 0px 12px 12px;
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+.DeliveryDetails div:nth-child(2) p{
+    font-size: 14px;
+    font-family: InterBold;
+    color:black;
+}
+.DeliveryDetails div:nth-child(2) p a {
+    color: #1162f2;
+}
+.DeliveryDetails div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    margin: 12px;
+}
+.delivaryDate{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.delivaryDate h3{
+    font-size: 14px;
+    font-family: InterBold;
+    color: black;
+    font-weight: normal;
+}
+.deliveryTime{
+    margin: 2px 0px 0px 2px;
+    margin-left: 27px;
+    margin-top: 4px;
+}
+.deliveryTime h5{
+    color: #E54805;
+    font-size: 11px;
+    font-family: regular;
+    line-height: 14px;
+}
+.DeliveryDetails div:nth-child(4){
+   display: flex;
+   flex-direction: column;
+   padding: 8px 12px;
+   margin: 12px;
+   background-color: #f5f5f5;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+
+}
+.order{
+    display: flex;
+}
+.review{
+    display: flex;
+}
+.order p {
+   font-size: 14px; 
+   font-family: regular;
+   color: rgb(51, 51, 51);
+   font-weight: normal;
+}
+.review h6 {
+   font-size: 11px;
+   font-family: regular;
+   color: rgb(112, 112, 112); 
+   font-weight: normal;
+   padding: 2px 0px 2px 4px;
+}
+.return{
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    padding: 12px 8px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.return img{
+    height: 40px;
+}
+.return p {
+    margin-left: 12px;
+    font-size: 14px;
+    font-family: regular1;
+    color: rgb(51, 51, 51);
+}
+.paymentMethod{
+    display: flex;
+    gap: 10px;
+    margin: 12px;
+}
+.replaceDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 12px 16px 8px;
+}
+.CashDelivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 12px 16px 8px;
+}
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 12px 16px 8px;
+}
+.replaceDiv h4{
+    font-size: 12px;
+    font-family: regular;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+.CashDelivery h4{
+    font-size: 12px;
+    font-family: regular;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}
+.customer h4{
+    font-size: 12px;
+    font-family: regular;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+}

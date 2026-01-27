@@ -6,7 +6,6 @@ function HeadsetProductPage() {
         <>
         <div className={style.HeadsetImage}>
             <img src={HeadsetImage} alt="" />
-           
         </div>
             
         </>

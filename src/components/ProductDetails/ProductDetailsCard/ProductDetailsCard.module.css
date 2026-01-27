@@ -1,0 +1,115 @@
+.ProductDetailsCard img{
+   width: 100%;
+}
+.ProductDetailsCardSymbol div:nth-child(1){
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(63 47 47 / 6%);
+}
+.ProductDetailsCardSymbol div:nth-child(2){
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63 47 47 / 6%);
+}
+.ProductDetailsCardSymbolTwo{
+    display: flex;
+    padding: 8px;
+    background-color: rgba(247, 243, 243, 0.99);
+    border-radius: 8px;
+    width: 100px;
+    margin-left: 15px;
+}
+.ProductDetailsCardSymbolTwo div:nth-child(1){
+    display: flex;
+    border-right: 1px solid black;
+    margin-right: 10px;
+}
+.ProductDetailsCardSymbol{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.ProductDetailsCard{
+    position: relative;
+}
+.ProductDetailsCardSymbolTwo div:nth-child(1) p{
+    color: rgba(51, 51, 51, 1.00);
+    font-size: 12px;
+    line-height: 16px;
+    font-family: InterBold;
+}
+.ProductDetailsCardSymbolTwo div:nth-child(2) p {
+    color: rgba(112, 112, 112, 1.00);
+    font-size: 12px;
+    line-height: 16px;
+    font-family: regular1;
+}
+.ProductDetailsCard{
+    background-color:#0000000f;
+}
+.DotSvg{
+    display: flex;
+    justify-content: center;
+}
+.PriceDetails{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    padding: 8px 16px 16px;
+
+}
+.PriceDetails img{
+    height: 20px;
+}
+.PriceDetails h4{
+  color: rgb(0, 128, 66) ;
+  white-space: nowrap;
+  font-weight: normal;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  font-size: 22px;
+  font-family: InterBold;
+}
+.PriceDetails h2 {
+    color: rgb(112, 112, 112);
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 22px;
+    font-family: regular;
+}
+.PriceDetails h3{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 22px;
+    font-family: InterBold;
+}
+.Price h5{
+    color: rgb(51, 51, 51);
+    font-family: normal;
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    font-family: InterBold;
+    margin-left: 16px;
+}
+.Price p{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    font-size: 14px;
+    font-family: regular1;
+    margin-left: 16px;
+    padding-top: 4px;
+}
+.Price p a {
+    color: #1162f2;
+    font-family: InterBold;
+    font-size: 14px;
+}

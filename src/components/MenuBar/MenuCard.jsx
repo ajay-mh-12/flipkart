@@ -119,7 +119,7 @@ function MenuCard() {
                 })}
             </div>
             
-            <div className={StyleMenu.menuBarTwo}>
+            <div className={StyleMenu.menuBarTwo} onClick={()=>navigate("/productList")}>
                 {MenuCard[1].map((pro, index)=>{
                     return <div key={index} className={StyleMenu.menuBarContentTwo}><img key={pro.id} src={pro.image} alt="" /><h4>{pro.name}</h4> </div>
                 })}

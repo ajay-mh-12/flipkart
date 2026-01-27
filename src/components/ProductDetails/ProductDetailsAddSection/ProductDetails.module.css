@@ -1,0 +1,110 @@
+/* .ProductDetailsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(216, 239, 254);
+    padding:12px 0px 8px;
+    width: 100%;
+
+}
+.ProductDetailsSearchBtn input{
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 12px;
+    padding-left:45px ;
+    width: 100%;
+    margin: 0 4px 0 4px;
+    border-color:rgb(46, 161, 255) ;
+   
+}
+.ProductDetailsSearchBtn{
+    position: relative;
+}
+.ProductDetailsSearchBtn svg{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    
+}
+.ProductDetailsHeader svg{
+    margin: 0 8px;
+} */
+/* Slider */
+.ProductDetailsHeaderSlider{
+    display: flex;
+    padding: 4px;
+    margin: 6px 8px;
+    background-color: rgb(245, 245, 245);
+    border-radius:8px;
+    min-width: 100%;
+}
+.ProductDetailsHeaderSliderMain{
+    display: flex;
+}
+.ProductDetailsHeaderSliderMainDetails div:nth-child(2){
+    display: flex;
+}
+.ProductDetailsHeaderSliderImage img{
+    height: 37px;
+}
+.ProductDetailsHeaderSliderImage {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+}
+.ProductDetailsHeaderSliderMainDetails{
+    margin-left: 8px;
+}
+.ProductDetailsHeaderSliderMainDetails p{
+    font-size: 12px;
+    font-family: regular;
+    color: rgb(51, 51, 51);
+    white-space: nowwrap;
+    font-weight: normal;
+    max-width: 100%;
+}
+.ProductDetailsHeaderSliderMainDetails div:nth-child(2) h4{
+    font-size: 10px;
+    font-family: InterBold;
+    color: rgb(0, 128, 66);
+    font-weight: normal;
+}
+.ProductDetailsHeaderSliderMainDetails div:nth-child(2) h3{
+    font-size: 10px;
+    color: rgb(112, 112, 112);
+    font-weight: normal;
+    font-family: regular;
+    text-decoration: line-through;
+}
+.ProductDetailsHeaderSliderMainDetails div:nth-child(2) h5{
+    font-size: 10px;
+    font-family: InterBold;
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+}
+.ProductDetailsHeaderSliderMainDetails div:nth-child(2) {
+    margin-top: 4px;
+}
+.ProductDetailsAdBtn p{
+    font-size: 10px;
+    font-family: InterBold;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    line-height: 12px;
+}
+.ProductDetailsAdBtn{
+    background-color: rgba(0, 0, 0, 0.16);
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-weight: normal;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    height: fit-content;
+    margin-left: 18px;
+}
+/* Slider TWO  */

@@ -9,13 +9,16 @@ import FlipkartIcon from "./HeadsetHeaderImages/filipImage.png"
 import Persentage from "./HeadsetHeaderImages/persentage.webp"
 import Modpersentage from "./HeadsetHeaderImages/Modpersentage.webp"
 import Calculation from "./HeadsetHeaderImages/Calculation.webp"
+import {  useNavigate } from 'react-router-dom';
 
 function Headset() {
+    const navigate = useNavigate();
     return (
         <>
+        <div className={style.HeadsetHeaderMain}>
         <div className={style.HeadsetHeader}>
             <div className={style.HeadsetHeaderOne}>
-                <div>
+                <div onClick={()=>navigate("/")}>
                     <img src={Image} alt="" />
                 </div>
                <div>
@@ -35,6 +38,7 @@ function Headset() {
                 </div>
             </div>
         </div>
+         </div>
         <div className={style.HeadsetTwo}>
             <div className={style.HeadsetSort}>
                 <img src={Arrow} alt="" />

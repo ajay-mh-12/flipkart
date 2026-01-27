@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./HeaderProCard.module.css";
+import { useNavigate } from "react-router-dom";
 
 function HeaderProductsCard() {
   const [product, setProduct] = useState([]);
@@ -13,11 +14,13 @@ function HeaderProductsCard() {
       .catch((err) => console.error(err));
   }, []);
 
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={style.productHeadsetMain}>
         {product.map((item, index) => (
-          <div className={style.HeadsetProductsCard} key={index}>
+          <div className={style.HeadsetProductsCard} key={index} onClick={()=>navigate("/productCard")} >
             <div className={style.HeaderDetailsImage}>
               <img src={item.image} alt="" />
               <svg width="24" height="24" viewBox="0 0 256 256">
@@ -47,7 +50,7 @@ function HeaderProductsCard() {
                 </svg>
                 <h5>{item.presentage}%</h5>
                 <p>₹{item.discount}</p>
-                <h4>₹{item.price}</h4>
+                <h4>{item.price}</h4>
               </div>
               <div>
                 <img
