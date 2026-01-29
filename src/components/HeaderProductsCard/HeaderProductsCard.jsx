@@ -1,15 +1,43 @@
 import { useEffect, useState } from "react";
 import style from "./HeaderProCard.module.css";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { sortOpenContext } from "../../App";
 
 function HeaderProductsCard() {
+  const { open, setOpen } = useContext(sortOpenContext);
   const [product, setProduct] = useState([]);
+  const [allProducts,setAllproducts] = useState([])
+  const [getvalue, setGetvalue] = useState(" ");
+
+  function handleValue(e) {
+    setOpen(!open);
+    setGetvalue(e.target.value);
+  }
+  
+  useEffect(() => {
+    
+    if (getvalue === "lowToHigh") {
+      setProduct([...allProducts].sort((a, b) => a.price - b.price));
+    }
+    if(getvalue === "highToLow"){
+      setProduct ([...allProducts].sort((a,b) => b.price - a.price))
+    }
+    if(getvalue === "popularity"){
+      setProduct (allProducts.filter(item => item.isPopularity))
+    }
+    if(getvalue === "newest"){
+      setProduct (allProducts.filter(item => item.isNewest))
+    }
+  }, [getvalue, allProducts])
 
   useEffect(() => {
     fetch("/Product.json")
       .then((res) => res.json())
       .then((data) => {
+        setAllproducts(data)
         setProduct(data);
+
       })
       .catch((err) => console.error(err));
   }, []);
@@ -20,7 +48,11 @@ function HeaderProductsCard() {
     <>
       <div className={style.productHeadsetMain}>
         {product.map((item, index) => (
-          <div className={style.HeadsetProductsCard} key={index} onClick={()=>navigate("/productCard")} >
+          <div
+            className={style.HeadsetProductsCard}
+            key={index}
+            onClick={() => navigate("/productCard")}
+          >
             <div className={style.HeaderDetailsImage}>
               <img src={item.image} alt="" />
               <svg width="24" height="24" viewBox="0 0 256 256">
@@ -29,9 +61,9 @@ function HeaderProductsCard() {
                   d="M128 216S28 160 28 92a52 52 0 0 1 100-20h0a52 52 0 0 1 100 20c0 68-100 124-100 124Z"
                   fill="#fff"
                   stroke="#B8BBBF"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
                 ></path>
               </svg>
             </div>
@@ -50,7 +82,7 @@ function HeaderProductsCard() {
                 </svg>
                 <h5>{item.presentage}%</h5>
                 <p>₹{item.discount}</p>
-                <h4>{item.price}</h4>
+                <h4>₹{item.price}</h4>
               </div>
               <div>
                 <img
@@ -80,6 +112,63 @@ function HeaderProductsCard() {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        className={`${style.sortMain} ${open ? style.open : style.sortMain}`}
+      >
+        <div className={style.sortHead}>
+          <h1>SORT BY</h1>
+        </div>
+        <div className={style.SortingElement}>
+          <div className={style.SortingType}>
+            <label htmlFor="Popularity" className={style.radioLabel}>
+              <input
+                type="radio"
+                id="Popularity"
+                name="sort"
+                value="popularity"
+                onChange={handleValue}
+              />
+              Popularity
+            </label>
+          </div>
+          <div className={style.SortingType}>
+            <label htmlFor="lowToHigh" className={style.radioLabel}>
+              <input
+                type="radio"
+                id="lowToHigh"
+                name="sort"
+                value="lowToHigh"
+                onChange={handleValue}
+              />
+              Price -- Low to High
+            </label>
+          </div>
+          <div className={style.SortingType}>
+            <label htmlFor="highToLow" className={style.radioLabel}>
+              <input
+                type="radio"
+                id="highToLow"
+                name="sort"
+                value="highToLow"
+                onChange={handleValue}
+              />
+              Price -- High to Low
+            </label>
+          </div>
+          <div className={style.SortingType}>
+            <label htmlFor="NewestFirst" className={style.radioLabel}>
+              <input
+                type="radio"
+                id="NewestFirst"
+                name="sort"
+                value="newest"
+                onChange={handleValue}
+              />
+              Newest First
+            </label>
+          </div>
+        </div>
       </div>
     </>
   );

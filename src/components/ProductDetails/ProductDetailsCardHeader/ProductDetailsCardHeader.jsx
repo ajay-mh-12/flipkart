@@ -11,9 +11,9 @@ function ProductDetailsCardHeader() {
           <path
             d="M27 16H5M14 7l-9 9 9 9"
             stroke="#333333"
-            stroke-width="2px"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2px"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             fill="none"
           ></path>
         </svg>
@@ -26,16 +26,16 @@ function ProductDetailsCardHeader() {
               r="84"
               fill="none"
               stroke="#333333ff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="16"
             ></circle>
             <path
               fill="none"
               stroke="#333333ff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="16"
               d="M175.4 175.4 224 224"
             ></path>
           </svg>
@@ -47,9 +47,9 @@ function ProductDetailsCardHeader() {
             d="M184 184H69.8L41.9 30.6a8 8 0 0 0-7.8-6.6H16"
             fill="none"
             stroke="#333333"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="12px"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="12px"
           ></path>
           <circle
             cx="80"
@@ -57,9 +57,9 @@ function ProductDetailsCardHeader() {
             r="20"
             fill="none"
             stroke="#333333"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="12px"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="12px"
           ></circle>
           <circle
             cx="184"
@@ -67,17 +67,17 @@ function ProductDetailsCardHeader() {
             r="20"
             fill="none"
             stroke="#333333"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="12px"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="12px"
           ></circle>
           <path
             d="M62.5 144h125.6a15.9 15.9 0 0 0 15.7-13.1L216 64H48"
             fill="none"
             stroke="#333333"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="12px"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="12px"
           ></path>
         </svg>
       </div>

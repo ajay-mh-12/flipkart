@@ -1,0 +1,15 @@
+.GenderFilter{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 19px;
+}
+.GenderFilter label{
+    color: rgba(0, 0, 0, 1.00);
+    font-size: 14px;
+    font-family: semiBold;
+}
+.GenderFilter input{
+    width: 18px;
+    height: 18px;
+}

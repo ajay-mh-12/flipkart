@@ -61,7 +61,6 @@ function DelivaryDetails() {
           <h4>Customer support</h4>
         </div>
       </div>
-      
     </>
   );
 }

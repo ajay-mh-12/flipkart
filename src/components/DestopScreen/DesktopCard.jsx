@@ -38,7 +38,7 @@ function DesktopCard(){
         <>
         <div className={Style.DesktopCard}>
         {DesktopImage.map((pro)=>{
-            return <img src={pro.image} alt="" />
+            return <img key={pro.id} src={pro.image} alt="" />
         })}
         </div>
         </>
