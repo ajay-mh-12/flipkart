@@ -1,0 +1,11 @@
+.featuresFilter{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+    padding: 12px 19px;
+}
+.featuresFilter input{
+    width: 18px;
+    height: 18px;
+}

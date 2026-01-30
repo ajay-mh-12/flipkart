@@ -1,0 +1,19 @@
+.ratingFilter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 12px 19px;
+}
+.ratingFilter input{
+    width: 18px;
+    height: 18px;
+}
+.ratingFilter label{
+    font-size: 14px;
+    font-family: regular1;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+}

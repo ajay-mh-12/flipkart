@@ -1,14 +1,18 @@
 import { React, useState } from "react";
 import Arrow from "./FilterImage/leftarrow.svg";
 import style from "./FilterPage.module.css";
-import GenderFilter from "./GenderFilter/GenderFilter";
+import BrandFilter from "./BrandFilter/BrandFilter";
+import PriceFilter from "./PriceFilter/PriceFilter";
+import Connectivity from "./Connectivity/Connectivity";
+import ColorFilter from "./ColorFilter/ColorFilter";
+import Discount from "./Discount/Discount";
+import RatingFilter from "./RatingFilter/RatingFilter";
+import Features from "./Features/Features";
+import Type from "./Type/Type";
 function FliterBlock() {
-const [selectValue,setSelectValue] = useState(" ")
+const [selectValue,setSelectValue] = useState("Brand")
 function getBrand(){
   setSelectValue("Brand")
-}
-function getGender(){
-  setSelectValue("Gender")
 }
 function getFabric(){
   setSelectValue("fabric")
@@ -64,54 +68,58 @@ console.log(selectValue)
         </div>
         <div className={style.FilterMainTwo}>
           <div className={style.FilterCatecarry}>
-            <span onClick={getGender}>
-              Gender
-            </span>
-            <span onClick={getBrand}>
+            <span onClick={getBrand} className={`${selectValue === "Brand" ? style.color : ''}`}>
               Brand
             </span>
-            <span onClick={getFabric}>
-              fabric
+            <span onClick={getFabric} className={`${selectValue === "fabric" ? style.color : ''}`}>
+              Connectivity
             </span>
-            <span onClick={getFit}>
-              Fit
+            <span onClick={getFit} className={`${selectValue === "Fit" ? style.color : ''}`}>
+              Color
             </span>
-            <span onClick={getType}>
-              Type
+            <span onClick={getType} className={`${selectValue === "Type" ? style.color : ''}`}>
+              Compatible With
             </span>
-            <span onClick={getSize}>
-              Size
+            <span onClick={getSize} className={`${selectValue === "Size" ? style.color : ''}`}>
+              Headphone Design
             </span>
-            <span onClick={getOccasion} >
-              Occasion
-            </span>
-            <span onClick={getPrice}>
-              Price
-            </span>
-            <span onClick={getCustomer}>
-              Customer Ratings
-            </span>
-            <span onClick={getFAssured}>
-              F-Assured
-            </span>
-            <span onClick={getDiscount}>
+            <span onClick={getOccasion} className={`${selectValue === "Occasion" ? style.color : ''}`} >
               Discount
             </span>
-            <span onClick={getOffer}>
+            <span onClick={getPrice} className={`${selectValue === "Price" ? style.color : ''}`}>
+              Price
+            </span>
+            <span onClick={getCustomer} className={`${selectValue === "Customer Ratings" ? style.color : ''}`} >
+              Customer Ratings
+            </span>
+            <span onClick={getFAssured} className={`${selectValue === "F-Assured" ? style.color : ''}`}>
+              Features
+            </span>
+            <span onClick={getDiscount} className={`${selectValue === "Discount" ? style.color : ''}`}>
+              Headphone Type
+            </span>
+            <span onClick={getOffer} className={`${selectValue === "Offers" ? style.color : ''}`} >
               Offers
             </span>
-            <span onClick={getNewArrivals}>
+            <span onClick={getNewArrivals} className={`${selectValue === "New Arrivals" ? style.color : ''}`}>
               New Arrivals
             </span>
-            <span onClick={getAvailability}>
+            <span onClick={getAvailability} className={`${selectValue === "Availability" ? style.color : ''}`}>
               Availabilty
             </span>
-            <span onClick={getCategory}>
+            <span onClick={getCategory} className={`${selectValue === "Category" ? style.color : ''}`}>
               Category
             </span>
           </div>
           <div className={style.productFilter}>
-            <GenderFilter/>
+            {selectValue === "Brand" ? <BrandFilter/> : ''}
+            {selectValue === "Price" ? <PriceFilter/>: ''}
+            {selectValue === "fabric" ? <Connectivity/>: ''}
+            {selectValue === "Fit" ? <ColorFilter/> : ''}
+            {selectValue === "Occasion" ? <Discount/> : ''}
+            {selectValue === "Customer Ratings" ? <RatingFilter/>: ''}
+            {selectValue === "F-Assured" ? <Features/>:''}
+            {selectValue === "Discount" ? <Type/>:''}
           </div>
         </div>
         <div className={style.FilterFooter}>

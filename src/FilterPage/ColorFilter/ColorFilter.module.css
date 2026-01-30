@@ -1,0 +1,72 @@
+.Color{
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorFilter{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 19px;
+}
+.ColorWrite{
+    display: flex;
+    gap: 20px;
+}
+.ColorBlue{
+    height: 18px;
+    width: 18px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorYellow{
+    height: 18px;
+    width: 18px;
+    background-color:yellow;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorPink{
+    height: 18px;
+    width: 18px;
+    background-color:pink;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorGreen{
+    height: 18px;
+    width: 18px;
+    background-color:green;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorRed{
+    height: 18px;
+    width: 18px;
+    background-color:red;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorGrey{
+    height: 18px;
+    width: 18px;
+    background-color:gray;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorOrange{
+    height: 18px;
+    width: 18px;
+    background-color:orange;
+    border-radius: 50%;
+    border: 1px solid black ;
+}
+.ColorBrown{
+    height: 18px;
+    width: 18px;
+    background-color:brown;
+    border-radius: 50%;
+    border: 1px solid black ;
+}

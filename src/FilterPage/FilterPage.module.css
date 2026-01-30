@@ -90,5 +90,7 @@
     flex: 2;
 }
 
-
-
+.color{
+    background-color: white;
+    color: #2874f0;
+}

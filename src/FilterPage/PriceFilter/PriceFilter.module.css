@@ -1,0 +1,18 @@
+.priceTags{
+    padding: 12px 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+}
+.priceTags label{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: regular;
+}
+.priceTags input{
+    width: 18px;
+    height: 18px;
+}

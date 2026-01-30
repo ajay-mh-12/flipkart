@@ -1,0 +1,18 @@
+.type{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+    padding: 12px 19px;
+
+}
+.type input{
+    width: 18px;
+    height: 18px;
+}
+.type label{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: regular;
+}

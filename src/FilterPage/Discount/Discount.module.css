@@ -1,0 +1,18 @@
+.discountDetails{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+    padding: 12px 19px;
+}
+.discountDetails input{
+    width: 18px;
+    height: 18px;
+}
+.discountDetails label{
+    font-size: 14px;
+    font-family: regular;
+    color: rgba(0, 0, 0, 1.00);
+    letter-spacing: normal;
+    line-height: normal;
+}
