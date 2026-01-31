@@ -9,7 +9,9 @@ import Discount from "./Discount/Discount";
 import RatingFilter from "./RatingFilter/RatingFilter";
 import Features from "./Features/Features";
 import Type from "./Type/Type";
+import { useNavigate } from "react-router-dom";
 function FliterBlock() {
+  const navigte = useNavigate()
 const [selectValue,setSelectValue] = useState("Brand")
 function getBrand(){
   setSelectValue("Brand")
@@ -53,12 +55,11 @@ function getAvailability(){
 function getCategory(){
   setSelectValue("Category")
 }
-console.log(selectValue)
   return (
     <>
       <div className={style.FilterMain}>
         <div className={style.FilterHeader}>
-          <div className={style.Arrow}>
+          <div className={style.Arrow} onClick={()=>navigte(-1)}>
             <img src={Arrow} alt="leftArrow" />
             <h3>Filters</h3>
           </div>
@@ -127,7 +128,7 @@ console.log(selectValue)
             <h4>4,433</h4>
             <p>products found</p>
           </div>
-          <div className={style.FilterFooterApply}>
+          <div className={style.FilterFooterApply} onClick={()=>navigte(-1)}>
             <h3>Apply</h3>
           </div>
         </div>

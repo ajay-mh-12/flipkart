@@ -1,46 +1,123 @@
-import { useEffect, useState } from "react";
+import { useEffect, useInsertionEffect, useState } from "react";
 import style from "./HeaderProCard.module.css";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { sortOpenContext } from "../../App";
+import { brandFiltercontext } from "../../App";
+import { connectFiltercontext } from "../../App";
+import { colorFiltercontext } from "../../App";
+import { discountFiltercontext } from "../../App";
+import { ratingFiltercontext } from "../../App";
+import { featuresFiltercontext } from "../../App";
+import { typesFiltercontext } from "../../App";
 
 function HeaderProductsCard() {
   const { open, setOpen } = useContext(sortOpenContext);
   const [product, setProduct] = useState([]);
-  const [allProducts,setAllproducts] = useState([])
+  const [allProducts, setAllproducts] = useState([]);
   const [getvalue, setGetvalue] = useState(" ");
+  const { brand, setBrand } = useContext(brandFiltercontext);
+  const {connect,setConnect} = useContext(connectFiltercontext);
+  const {color,setColor} = useContext(colorFiltercontext);
+  const {discount,setDiscount} = useContext(discountFiltercontext);
+  const {rateing,setRateing} = useContext(ratingFiltercontext);
+  const {features,setFeatures} = useContext(featuresFiltercontext);
+  const {type,setType} = useContext(typesFiltercontext);
 
   function handleValue(e) {
     setOpen(!open);
     setGetvalue(e.target.value);
   }
-  
+  console.log(brand);
   useEffect(() => {
-    
     if (getvalue === "lowToHigh") {
       setProduct([...allProducts].sort((a, b) => a.price - b.price));
     }
-    if(getvalue === "highToLow"){
-      setProduct ([...allProducts].sort((a,b) => b.price - a.price))
+    if (getvalue === "highToLow") {
+      setProduct([...allProducts].sort((a, b) => b.price - a.price));
     }
-    if(getvalue === "popularity"){
-      setProduct (allProducts.filter(item => item.isPopularity))
+    if (getvalue === "popularity") {
+      setProduct(
+        [...allProducts].sort((a, b) => b.isPopularity - a.isPopularity),
+      );
     }
-    if(getvalue === "newest"){
-      setProduct (allProducts.filter(item => item.isNewest))
+    if (getvalue === "newest") {
+      setProduct(allProducts.filter((item) => item.isNewest));
     }
-  }, [getvalue, allProducts])
+  }, [getvalue, allProducts]);
+
+  useEffect(() => {
+    if(brand.length === 0) {
+      setProduct(allProducts)
+    }else {
+      setProduct(allProducts.filter((i) => brand.includes(i.brand)))
+    }
+  }, [brand,allProducts]);
+
 
   useEffect(() => {
     fetch("/Product.json")
       .then((res) => res.json())
       .then((data) => {
-        setAllproducts(data)
+        setAllproducts(data);
         setProduct(data);
-
       })
       .catch((err) => console.error(err));
   }, []);
+
+  // connectivity // 
+  useEffect(()=>{
+    if(connect.length === 0) {
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>connect.includes(item.connectivity)))
+    }
+  },[connect,allProducts])
+
+  // color // 
+  useEffect(()=>{
+    if(color.length === 0){
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>color.includes(item.color)))
+    }
+  },[color,allProducts])
+
+  // discount // 
+  useEffect(()=>{
+    if(discount.length === 0){
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>discount.includes(item.offer)))
+    }
+  },[discount,allProducts])
+
+  // Rating //
+  useEffect(()=>{
+    if(rateing.length === 0) {
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>rateing.includes(item.rating)))
+    }
+  },[rateing,allProducts])
+
+  // feautures // 
+  useEffect(()=>{
+    if(features.length === 0){
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>features.includes(item.feature)))
+    }
+  },[features,allProducts])
+
+  // type // 
+  useEffect(()=>{
+    if(type.length === 0){
+      setProduct(allProducts)
+    }else{
+      setProduct(allProducts.filter((item)=>type.includes(item.type)))
+    }
+  },[type,allProducts])
 
   const navigate = useNavigate();
 

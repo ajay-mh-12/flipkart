@@ -13,14 +13,42 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 
 import { sortOpenContext } from "../../App";
+import { brandFiltercontext } from "../../App";
+import { connectFiltercontext } from "../../App";
+import { colorFiltercontext } from "../../App";
+import { discountFiltercontext } from "../../App";
+import { ratingFiltercontext } from "../../App";
+import { featuresFiltercontext } from "../../App";
+import { typesFiltercontext } from "../../App";
 
 function Headset() {
 //   const [open, setOpen] = useState(false);
 
 const {open, setOpen} = useContext(sortOpenContext)
+const {brand, setBrand} = useContext(brandFiltercontext)
+const {connect,setConnect} = useContext(connectFiltercontext)
+const {color,setColor} = useContext(colorFiltercontext)
+const {discount,setDiscount} = useContext(discountFiltercontext)
+const {rateing,setRateing} = useContext(ratingFiltercontext)
+const {features,setFeatures} =useContext(featuresFiltercontext)
+const {type,setType}=useContext(typesFiltercontext)
+
+
+
+function fliterClick() {
+  navigate('/Filter')
+  setBrand([]);
+  setConnect([]);
+  setColor([]);
+  setDiscount([]);
+  setRateing([]);
+  setFeatures([]);
+  setType([]);
+}
 
   function handleOpen() {
     setOpen(!open);
+    
   }
 //   console.log(open);
   const navigate = useNavigate();
@@ -57,7 +85,7 @@ const {open, setOpen} = useContext(sortOpenContext)
           <h4>Sort</h4>
         </div>
         <div className={style.BorderHeadset}></div>
-        <div className={style.HeadsetFilter} onClick={()=>navigate("/Filter")}>
+        <div className={style.HeadsetFilter} onClick={fliterClick}>
           <img src={TwoLineIcon} alt="" />
           <h4>Filter</h4>
         </div>

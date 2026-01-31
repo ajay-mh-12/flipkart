@@ -2,102 +2,160 @@
   {
     "id": 1,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/r/p/e/new-edition-tws-m19-gaming-earbuds-bluetooth-5-0-wireless-led-original-imaheczqsngzfrfj.jpeg?q=60&crop=false",
-    "name": "TECHBROS",
+    "name": "realme",
+    "brand":"realme",
     "price": 290,
     "discount": 500,
     "subname": "ResonanceX OWS w/70H..",
     "presentage": 50,
     "isPopularity":true,
-    "isNewest":false
+    "isNewest":false,
+    "connectivity":"bluetooth",
+    "color":"pink",
+    "offer":"50%",
+    "feature":"fastCharge",
+    "type":"ontheEar"
+
   },
   {
     "id": 2,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/d/u/0/nb121-pods-upto-40-hours-playtime-type-c-fast-charging-dual-original-imahh4a72k7jbk2h.jpeg?q=60&crop=false",
-    "name": "BULLSTROM",
+    "name": "Noise",
+    "brand":"noise",
     "price": 785,
     "discount": 1200,
     "subname": "Kraken X1 with Battery Dis..",
-    "presentage": 22,
+    "presentage": 40,
     "isPopularity":false,
-    "isNewest":true
+    "isNewest":true,
+    "connectivity":"wired",
+    "color":"white",
+    "offer":"40%",
+    "feature":"fastCharge",
+    "type":"ontheEar"
   },
   {
     "id": 3,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/d/q/r/-original-imagp6skt77zsdjt.jpeg?q=60&crop=false",
-    "name": "Boston Levin",
+    "name": "JBL",
+    "brand":"jbl",
     "price": 699,
     "discount": 2000,
     "subname": "WHITE-ANC-EARBUDS BI..",
-    "presentage": 66,
+    "presentage": 50,
     "isPopularity":true,
-    "isNewest":false
+    "isNewest":false,
+    "connectivity":"wired",
+    "color":"blue",
+    "offer":"50%",
+    "feature":"fastCharge",
+    "type":"ontheEar"
   },
   {
     "id": 4,
+    "brand":"boat",
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/s/r/9/bs-ultrapood-bullstorm-original-imahcus46hzumv9a.jpeg?q=60&crop=false",
     "name": "boAt",
     "price": 1400,
     "discount": 4000,
     "subname": "NB121 Pods Upto 40 Hour..",
-    "presentage": 63,
+    "presentage": 40,
     "isNewest":true,
-    "isPopularity":false
+    "isPopularity":false,
+    "connectivity":"blueWired",
+    "color":"black",
+    "offer":"40%",
+    "feature":"noiseCan",
+    "type":"intheEar"
   },
   {
     "id": 5,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/u/4/d/-original-imah9x5amfhetsmz.jpeg?q=60&crop=false",
-    "name": "JUSTSYNC",
+    "name": "CMF by Nothing",
+    "brand":"cmfnothing",
     "price": 1230,
     "discount": 3000,
     "subname": "Airdopes 161, Adv 4Mic",
-    "presentage": 45,
+    "presentage": 30,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"blueWired",
+    "color":"pink",
+    "offer":"30%",
+    "feature":"noiseCan",
+    "type":"intheEar"
+
   },
   {
     "id": 6,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/shopsy-headphone/x/9/k/bluetooth-yes-tws-nexx-arham-original-imagyvcgugzpkz98.jpeg?q=60&crop=false",
-    "name": "Blaupunkt",
+    "name": "OPPO",
+    "brand":"OPPO",
     "price": 1500,
     "discount": 3000,
     "subname": "Buds VS102 with 50 Hrs",
-    "presentage": 82,
+    "presentage": 30,
     "isNewest":true,
-    "isPopularity":false
+    "isPopularity":false,
+    "connectivity":"blueWired",
+    "color":"black",
+    "offer":"30%",
+    "feature":"noiseCan",
+    "type":"intheEar"
   },
   {
     "id": 7,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/n/i/m/-original-imahfczv4qmuxwe6.jpeg?q=60&crop=false",
-    "name": "Noise",
+    "name": "Samsung",
+    "brand":"samsung",
     "price": 3452,
     "discount": 5000,
     "subname": "BS Ultrapod Bluetooth G",
-    "presentage": 89,
+    "presentage": 50,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"bluetooth",
+    "color":"green",
+    "offer":"50%",
+    "feature":"deepBass",
+    "type":"trueWireless"
   },
   {
     "id": 8,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/v/p/3/-original-imah8bfrrurageu2.jpeg?q=60&crop=false",
     "name": "OnePlus",
+    "brand":"oneplus",
     "price": 5487,
     "discount": 8000,
     "subname": "Airdopes Alpha, 35H",
-    "presentage": 85,
+    "presentage": 40,
     "isNewest":true,
-    "isPopularity":false
+    "isPopularity":false,
+    "connectivity":"bluetooth",
+    "color":"black",
+    "offer":"40%",
+    "rating":"1star",
+    "feature":"deepBass",
+    "type":"trueWireless"
 
   },
   {
     "id": 9,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/r/c/j/-original-imahae3ea2j4mhkt.jpeg?q=60&crop=false",
-    "name": "NEXX ARHAM",
+    "name": "Apple",
+    "brand":"Apple",
     "price": 2500,
     "discount": 4000,
     "subname": "Gaming Earbuds Pro",
-    "presentage": 87,
+    "presentage": 40,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"blueWired",
+    "color":"grey",
+    "offer":"40%",
+    "rating":"2star",
+    "feature":"deepBass",
+    "type":"trueWireless"
 
   },
   {
@@ -107,9 +165,14 @@
     "price": 13999,
     "discount": 20999,
     "subname": "FreeBuds Pro (2nd Gen)",
-    "presentage": 75,
+    "presentage": 40,
     "isNewest":true,
-    "isPopularity":false
+    "isPopularity":false,
+    "connectivity":"wired",
+    "color":"black",
+    "offer":"40%",
+    "rating":"1star",
+    "feature":"deepBass"
   },
   {
     "id": 11,
@@ -118,9 +181,14 @@
     "price": 999,
     "discount": 2500,
     "subname": "True Bass ANC Pods",
-    "presentage": 58,
+    "presentage": 50,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"wired",
+    "color":"blue",
+    "offer":"50%",
+    "rating":"1star",
+    "feature":"fastCharge"
   },
   {
     "id": 12,
@@ -131,7 +199,11 @@
     "subname": "Quad Mic Clear Voice",
     "presentage": 71,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"bluetooth",
+    "color":"pink",
+    "rating":"4star",
+    "feature":"noiseCan"
   },
   {
     "id": 13,
@@ -142,7 +214,11 @@
     "subname": "UltraBass Pods 45H",
     "presentage": 68,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"blueWired",
+    "color":"black",
+    "rating":"4star",
+    "feature":"deepBass"
   },
   {
     "id": 14,
@@ -153,7 +229,11 @@
     "subname": "Gaming Mode Low Latency",
     "presentage": 80,
     "isNewest":true,
-    "isPopularity":false
+    "isPopularity":false,
+    "connectivity":"wired",
+    "color":"black",
+    "rating":"4star",
+    "feature":"noiseCan"
   },
   {
     "id": 15,
@@ -162,9 +242,14 @@
     "price": 2100,
     "discount": 4500,
     "subname": "Deep Bass Edition",
-    "presentage": 73,
+    "presentage": 30,
     "isNewest":true,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"bluetooth",
+    "color":"green",
+    "offer":"30%",
+    "rating":"3star",
+    "feature":"fastCharge"
   },
   {
     "id": 16,
@@ -173,8 +258,14 @@
     "price": 3200,
     "discount": 7000,
     "subname": "Premium ANC Earbuds",
-    "presentage": 90,
+    "presentage": 40,
     "isNewest":false,
-    "isPopularity":true
+    "isPopularity":true,
+    "connectivity":"wired",
+    "color":"black",
+    "offer":"40%",
+    "rating":"3star",
+    "feature":"deepBass"
+    
   }
 ]
