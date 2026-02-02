@@ -131,7 +131,7 @@ function HeaderProductsCard() {
             onClick={() => navigate("/productCard")}
           >
             <div className={style.HeaderDetailsImage}>
-              <img src={item.image} alt="" />
+              <img className={style.image} src={item.image} alt="" />
               <svg width="24" height="24" viewBox="0 0 256 256">
                 <path fill="none" d="M0 0h256v256H0z"></path>
                 <path
@@ -162,7 +162,7 @@ function HeaderProductsCard() {
                 <h4>₹{item.price}</h4>
               </div>
               <div>
-                <img
+                <img 
                   src="https://rukminim2.flixcart.com/www/76/32/promos/30/08/2023/59dc7885-72bf-4135-9099-025f074b0eb1.png?q=90"
                   alt=""
                 />

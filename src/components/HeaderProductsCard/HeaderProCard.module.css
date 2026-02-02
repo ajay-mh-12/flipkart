@@ -1,6 +1,5 @@
 .HeaderDetailsImage img {
-  width: fit-content;
-  height: 170px;
+  width: 100%;
 }
 .HeaderDetailsSubImage {
   display: flex;
@@ -9,12 +8,11 @@
 .HeadsetProductsCard {
   display: flex;
   flex-direction: column;
-  /* width: 188px; */
   min-height: 216px;
   padding-bottom: 8px;
   border-right: 1px solid rgb(234, 234, 234);
-  /* justify-content: center;
-    align-items: center; */
+  justify-content: space-between;
+  
 }
 .HeadsetDetails img {
   height: 15px;
@@ -134,3 +132,17 @@
 /* .sortHead{
     position: relative;
 } */
+.image{
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width:1023px) {
+  .HeadsetProductsCard{
+    display: none;
+  }
+  .productHeadsetMain{
+    display: none;
+  }
+  
+}

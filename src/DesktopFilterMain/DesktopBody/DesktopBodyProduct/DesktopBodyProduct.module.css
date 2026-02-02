@@ -1,0 +1,14 @@
+.sortElement{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.sort{
+    padding: 8px 10px 4px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(33, 33, 33);
+    line-height: 19.6px;
+    font-family: semiBold;
+}

@@ -9,6 +9,7 @@ import ProductDetailsMain from "./components/ProductDetails/ProductDetailsMain";
 // import Sorting from "./components/SortProduct/Sorting";
 import { createContext, useState } from "react";
 import FilterPage from "./FilterPage/FilterPage";
+import DesktopFilterMain from "./DesktopFilterMain/DesktopFilterMain";
 export const sortOpenContext = createContext();
 export const brandFiltercontext = createContext();
 export const colorFiltercontext = createContext();
@@ -58,6 +59,8 @@ function App() {
                               <Headset />
                               <HeadsetProductPage />
                               <HeaderProductsCard />
+                              <DesktopFilterMain/>
+
                             </>
                           }
                         />

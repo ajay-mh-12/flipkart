@@ -1,0 +1,152 @@
+.DesktopMainFilterHeader {
+  background-color: #2874f0;
+  display: flex;
+  height: 56px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+.logo {
+  width: 75px;
+}
+.plusLogo {
+  width: 10px;
+}
+.flipHeaderLogo div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: center;
+}
+.storeCart {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.more {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  margin: 0 20px;
+}
+.more p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  font-family: semiBold;
+}
+.more img {
+  transform: rotate(-90deg);
+}
+.inputTypeSearch input {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-family: regular1;
+  width: 100%;
+  min-width: 304px;
+}
+.inputTypeSearch {
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-left: 12px;
+  /* width: 100%; */
+  /* width: calc(100% - 540px); */
+}
+.inputTypeSearch img {
+  position: absolute;
+  right: 20px;
+  bottom: 6px;
+}
+.plusWrite p {
+  font-size: 11px;
+  font-style: italic;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 15.4px;
+}
+.plusWrite h6 {
+  color: rgb(255, 229, 0);
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 15.4px;
+  cursor: pointer;
+}
+.flipHeaderLogo {
+  display: flex;
+  flex-direction: column;
+  min-width: 137px;
+  align-items: flex-end;
+}
+.login {
+  padding: 5px 40px;
+  background-color: #ffffff;
+  margin: 0 20px;
+}
+.login p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: rgb(40, 116, 240);
+  font-family: semiBold;
+}
+.seller {
+  margin: 0 20px;
+}
+.seller p {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  font-family: semiBold;
+}
+.storeCart {
+  margin: 0 20px;
+}
+.storeCart p {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-family: semiBold;
+}
+.applicate {
+  display: flex;
+  align-items: center;
+  height: 40px;
+   width: 100%; 
+   justify-content: space-between; 
+  text-align: center;
+}
+.electronics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 5px;
+}
+.electronics span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+  font-family: semiBold;
+  color: rgb(0, 0, 0);
+}
+.electronics img {
+  transform: rotate(-90deg);
+}

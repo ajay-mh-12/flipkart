@@ -136,3 +136,16 @@
     width: 100%;
     gap: 5px;  
 }
+
+@media screen and (min-width:1024px) {
+    .HeadsetHeaderMain{
+        display: none;
+    }
+    .HeadsetTwo{
+        display: none;
+    }
+    .HeadsetHeaderDetails{
+        display: none;
+    }
+    
+}

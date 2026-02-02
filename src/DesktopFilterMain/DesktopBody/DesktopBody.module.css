@@ -1,0 +1,58 @@
+.homeName{
+    display: flex;
+    gap: 10px;
+}
+.homeName img{
+    height: 7px;
+    width: 20px;
+    transform: rotate(180deg);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.menu p{
+    font-size: 12px;
+    color: #878787;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    line-height: 16.8px;
+    font-family: regular;
+}
+.homePage{
+    padding: 12px 16px 0;
+}
+.paragrah p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.4px;
+    color: rgb(135, 135, 135);
+    font-family: regular;
+}
+.paragrah a{
+    color: #2874f0;
+}
+.paragrah{
+    padding: 12px 5px 4px 0px;
+}
+.productHeading{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 8px;
+    align-items: center;
+    text-align: center;
+}
+.productHeading h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    font-family: semiBold;
+}
+.productHeading p{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    font-family: regular1;
+}
