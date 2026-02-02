@@ -4,15 +4,6 @@ function DesktopBodyProduct() {
     return (
         <>
         <div className={style.sortElement}>
-        
-        
-        
-        Login
-        
-        
-        Location not set Select delivery location
-        
-        
             <div className={style.sort} >
                 <p>Sort By</p>
             </div>
