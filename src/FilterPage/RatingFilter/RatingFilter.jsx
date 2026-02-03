@@ -17,19 +17,19 @@ console.log(rateing)
         <>
         <div className={style.rating}>
             <div className={style.ratingFilter}>
-                <input type="checkbox" id='rate' value="3star" onChange={handleClick} />
+                <input type="checkbox" id='rate' value={3} onChange={handleClick} />
                 <label htmlFor="rate">3★ & above</label>
             </div>
             <div className={style.ratingFilter}>
-                <input type="checkbox"  id='rate4' value="4star" onChange={handleClick}/>
+                <input type="checkbox"  id='rate4' value={4} onChange={handleClick}/>
                 <label htmlFor="rate4">4★ & above</label>
             </div>
             <div className={style.ratingFilter}>
-                <input type="checkbox" id='rate2' value="2star" onChange={handleClick} />
+                <input type="checkbox" id='rate2' value={2} onChange={handleClick} />
                 <label htmlFor="rate2">2★ & above</label>
             </div>
             <div className={style.ratingFilter}>
-                <input type="checkbox" id='rate1' value="1star" onChange={handleClick} />
+                <input type="checkbox" id='rate1' value={1} onChange={handleClick} />
                 <label htmlFor="rate1">1★ & above</label>
             </div>
 
