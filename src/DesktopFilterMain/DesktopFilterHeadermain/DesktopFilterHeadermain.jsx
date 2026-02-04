@@ -37,6 +37,7 @@ function DesktopFilterHeadermain() {
                 <p>Cart</p>
             </div>
         </div> 
+        <div className={style.mainApplicate}>
         <div className={style.applicate}>
             <div className={style.electronics}>
               <span>Electronics</span>
@@ -74,6 +75,7 @@ function DesktopFilterHeadermain() {
             <div className={style.electronics}>
                 <span>Offer Zone</span>
             </div>
+        </div>
         </div>
         </>
     );

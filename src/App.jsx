@@ -58,8 +58,8 @@ function App() {
                             <>
                               <Headset />
                               <HeadsetProductPage />
-                              <HeaderProductsCard />
                               <DesktopFilterMain/>
+                              {/* <HeaderProductsCard /> */}
 
                             </>
                           }

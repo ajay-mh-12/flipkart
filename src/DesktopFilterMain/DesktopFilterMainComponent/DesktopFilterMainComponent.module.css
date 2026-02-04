@@ -1,0 +1,15 @@
+
+@media screen and (min-width:1024px) {
+    .DesktopFilterMainComponent{
+        display: flex;
+        padding: 8px;
+        max-width: 1680px;
+        min-width: 978px;
+        margin: 0 auto;
+        background-color: #f1f2f4d2;
+    }
+    .DesktopFilterMainComponentTwo{
+        flex: 1;
+    }
+
+}

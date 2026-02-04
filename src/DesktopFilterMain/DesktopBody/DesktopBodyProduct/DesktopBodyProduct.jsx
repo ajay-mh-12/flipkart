@@ -1,5 +1,6 @@
 import { React } from 'react';
 import style from "./DesktopBodyProduct.module.css"
+import HeaderProductsCard from '../../../components/HeaderProductsCard/HeaderProductsCard';
 function DesktopBodyProduct() {
     return (
         <>
@@ -19,6 +20,8 @@ function DesktopBodyProduct() {
             <div className={style.sorting}>
                 <p>Discount</p>
             </div>
+            
+           
         </div>
         </>
     );

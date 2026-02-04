@@ -11,6 +11,7 @@ import { ratingFiltercontext } from "../../App";
 import { featuresFiltercontext } from "../../App";
 import { typesFiltercontext } from "../../App";
 import star from "./HeaderProductCardImage/star-svgrepo-com (2).svg"
+import whiteStar from "./HeaderProductCardImage/star-svgrepo-com (3).svg"
 
 function HeaderProductsCard() {
   const { open, setOpen } = useContext(sortOpenContext);
@@ -162,7 +163,7 @@ useEffect(() => {
                 />
                 <span>$684 with 2 offers</span>
               </div>
-              <div>
+              <div className={style.star}>
                 { new Array(item.rating).fill(0).map((_, index) => {
                   return  <img key={index}
                   src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%2326A541'%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='800px'%20height='800px'%20viewBox='0%200%20126.729%20126.73'%20xml:space='preserve'%20stroke='%2326A541'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cg%3e%3cpath%20d='M121.215,44.212l-34.899-3.3c-2.2-0.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101,0l-12.4,30.3%20c-0.8,2.1-2.8,3.5-5,3.7l-34.9,3.3c-5.2,0.5-7.3,7-3.4,10.5l26.3,23.1c1.7,1.5,2.4,3.7,1.9,5.9l-7.9,32.399%20c-1.2,5.101,4.3,9.3,8.9,6.601l29.1-17.101c1.9-1.1,4.2-1.1,6.1,0l29.101,17.101c4.6,2.699,10.1-1.4,8.899-6.601l-7.8-32.399%20c-0.5-2.2,0.2-4.4,1.9-5.9l26.3-23.1C128.615,51.212,126.415,44.712,121.215,44.212z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
@@ -174,6 +175,13 @@ useEffect(() => {
                   
                 })}
               </div>
+              <div className={style.starDesk}>
+                <p>3</p>
+                <img src={whiteStar} alt="" />
+              </div>
+              <div className={style.bank}>
+                <p>{item.bank}</p>
+                </div>
             </div>
           </div>
         ))}

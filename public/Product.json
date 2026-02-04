@@ -14,7 +14,8 @@
     "color": "pink",
     "feature": "fastCharge",
     "type": "ontheEar",
-    "rating": 3
+    "rating": 3,
+    "bank":"Bank Offer"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "color": "white",
     "feature": "fastCharge",
     "type": "ontheEar",
-    "rating": 3
+    "rating": 3,
+    "bank":"Only few left"
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "color": "blue",
     "feature": "fastCharge",
     "type": "ontheEar",
-    "rating": 3
+    "rating": 3,
+    "bank":"Bank Offer"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "color": "black",
     "feature": "noiseCan",
     "type": "intheEar",
-    "rating": 2
+    "rating": 2,
+    "bank":"Only few left"
   },
   {
     "id": 5,
@@ -82,7 +86,9 @@
     "color": "pink",
     "feature": "noiseCan",
     "type": "intheEar",
-    "rating": 2
+    "rating": 2,
+    "bank":"Bank Offer"
+    
   },
   {
     "id": 6,
@@ -99,7 +105,8 @@
     "color": "black",
     "feature": "noiseCan",
     "type": "intheEar",
-    "rating": 3
+    "rating": 3,
+    "bank":"Only few left"
   },
   {
     "id": 7,
@@ -116,7 +123,8 @@
     "color": "green",
     "feature": "deepBass",
     "type": "trueWireless",
-    "rating": 4
+    "rating": 4,
+    "bank":"Bank Offer"
   },
   {
     "id": 8,
@@ -133,7 +141,8 @@
     "color": "black",
     "rating": 4,
     "feature": "deepBass",
-    "type": "trueWireless"
+    "type": "trueWireless",
+    "bank":"Only few left"
   },
   {
     "id": 9,
@@ -150,7 +159,8 @@
     "color": "grey",
     "rating": 4,
     "feature": "deepBass",
-    "type": "trueWireless"
+    "type": "trueWireless",
+    "bank":"Bank Offer"
   },
   {
     "id": 10,
@@ -165,7 +175,8 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
-    "feature": "deepBass"
+    "feature": "deepBass",
+    "bank":"Only few left"
   },
   {
     "id": 11,
@@ -180,7 +191,8 @@
     "connectivity": "wired",
     "color": "blue",
     "rating": 1,
-    "feature": "fastCharge"
+    "feature": "fastCharge",
+    "bank":"Bank Offer"
   },
   {
     "id": 12,
@@ -195,7 +207,8 @@
     "connectivity": "bluetooth",
     "color": "pink",
     "rating": 4,
-    "feature": "noiseCan"
+    "feature": "noiseCan",
+    "bank":"Only few left"
   },
   {
     "id": 13,
@@ -210,7 +223,8 @@
     "connectivity": "blueWired",
     "color": "black",
     "rating": 4,
-    "feature": "deepBass"
+    "feature": "deepBass",
+    "bank":"Bank Offer"
   },
   {
     "id": 14,
@@ -225,7 +239,8 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
-    "feature": "noiseCan"
+    "feature": "noiseCan",
+    "bank":"Only few left"
   },
   {
     "id": 15,
@@ -240,7 +255,8 @@
     "connectivity": "bluetooth",
     "color": "green",
     "rating": 3,
-    "feature": "fastCharge"
+    "feature": "fastCharge",
+    "bank":"Bank Offer"
   },
   {
     "id": 16,
@@ -255,6 +271,7 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 3,
-    "feature": "deepBass"
+    "feature": "deepBass",
+    "bank":"Only few left"
   }
 ]

@@ -1,18 +1,20 @@
-import React from "react";
+
 import DesktopFilterHeadermain from "./DesktopFilterHeadermain/DesktopFilterHeadermain";
-import style from "./DesktopFilterMain.module.css"
-import DesktopBody from "./DesktopBody/DesktopBody";
-function DesktopFilterMain(){
-    return(
-        <>
-        <div className={style.desktopMainFilter} >
-        <DesktopFilterHeadermain/>
-        <DesktopBody/>
-    
+import style from "./DesktopFilterMain.module.css";
+import DesktopFilterMainComponent from "./DesktopFilterMainComponent/DesktopFilterMainComponent";
 
+function DesktopFilterMain() {
+
+  return (
+    <>
+      <div className={style.desktopMainFilter}>
+        <DesktopFilterHeadermain />
+        <div className={style.desktopFilterBody}>
+          <DesktopFilterMainComponent/>
+         
         </div>
-
-        </>
-    )
+      </div>
+    </>
+  );
 }
-export default DesktopFilterMain
+export default DesktopFilterMain;
