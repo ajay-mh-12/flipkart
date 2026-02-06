@@ -77,6 +77,47 @@
  .open .earphone img {
     transform: rotate(-90deg);
 }
+.compatibleHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.compatibleHead p {
+    font-size:13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    line-height: 18.2px;
+    color: rgb(33, 33, 33);
+    font-family: semiBold;
+}
+.compatibleHead img{
+    transform: rotate(-90deg);
+    height: 10px;
+}
+.compatibleMain{
+    padding:0 16px 16px;
+}
+.compatibleHead{
+    padding: 16px 0;
+}
+.compatible{
+    padding: 6px 0;
+    display: none;
+}
+.open .compatible {
+    display: block;
+}
+.open .compatibleHead img{
+    transform: rotate(90deg);
+}
+.compatible label{
+    padding-left:11px;
+    font-size: 14px;
+    color: #212121;
+    font-family: regular1;
+    font-weight: 400;
+
+}
 @media screen and (min-width:1024px) {
     .DesktopFilterSide{
         display: block;

@@ -1,0 +1,38 @@
+.connectivity{
+    display: flex;
+    justify-content: space-between;
+    padding:  16px 0; 
+    border-top: 1px solid #f0f0f0;
+}
+.connectivityMain{
+    padding:0 16px;
+}
+.connectivity img {
+    transform: rotate(-90deg);
+    height: 10px;
+}
+.connectivity p {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: #212121;
+    line-height: 18.2px;
+    font-family: semiBold;
+}
+.bluetooth label{
+    padding-left: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: regular1;
+    color: rgb(33, 33, 33);
+}
+.bluetooth{
+    padding: 6px 0;
+    display: none;
+}
+.open .bluetooth {
+    display: block;
+}
+.open .connectivity img {
+    transform: rotate(90deg);
+}
