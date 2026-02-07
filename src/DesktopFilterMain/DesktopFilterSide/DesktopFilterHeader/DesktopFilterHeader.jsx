@@ -1,12 +1,17 @@
 import React from "react";
 import leftArrow from "./DesktopFilterHeaderImage/leftArrow (1).svg"
 import blackArrow from "./DesktopFilterHeaderImage/BlackleftArrow.svg"
+import assured from "./DesktopFilterHeaderImage/AssuredIMage.png"
 import style from "../../DesktopFilterSide/DesktopFilterSlide.module.css"
 import { useState } from "react";
 import DesktopBrandFilter from "./DesktopBrandFilter/DesktopBrandFilter";
 import DesktopConnectvityFilter from "../DesktopConnectvityFilter/DesktopConnectvityFilter";
 import DesktopColorFilter from "../DesktopColorFilter/DesktopColorFilter";
 import DesktopPriceFilter from "../DesktopPriceFilter/DesktopPriceFilter";
+import DesktopFilterDiscount from "../DesktopFilterDiscount/DesktopFilterDiscount";
+import DesktopFilterRating from "../DesktopFilterRating/DesktopFilterRating";
+import DesktopFilterHeadType from "../../DesktopFilterHeadType/DesktopFilterHeadType";
+
 function DesktopFilterHeader(){
     const [open,setOpen] = useState(false)
     const [click,setClick] = useState(false)
@@ -88,6 +93,24 @@ function DesktopFilterHeader(){
             <div>
                 <DesktopPriceFilter/>
             </div>
+            <div>
+                <DesktopFilterDiscount/>
+            </div>
+            <div>
+                <DesktopFilterRating/>
+            </div>
+            <div className={style.assureImage}>
+                <input type="checkbox" id="image" />
+                <img src={assured} alt="image" />
+            </div>
+            <div>
+                <DesktopFilterHeadType/>
+            </div>
+            <div className={style.avalability}>
+                <p>AVAILABILITY</p>
+                <img src={leftArrow} alt="" />
+            </div>
+            
 
         </div>
         </>

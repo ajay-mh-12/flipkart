@@ -1,0 +1,42 @@
+.DesktopFilterType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.DesktopFilterType img{
+    transform: rotate(-90deg);
+    height: 10px;
+}
+.DesktopFilterType p {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    color:rgb(33, 33, 33);
+    line-height: 18.2px;
+    font-family: semiBold;
+}
+.DesktopFilterHeadTypeMain{
+    padding: 16px;
+}
+.DesktopFilterTypes{
+    padding: 11px 0;
+}
+.desktopFilterTypeValue{
+    padding: 6px 0;
+    display: none;
+}
+.open .desktopFilterTypeValue{
+    display: block;
+}
+.open .DesktopFilterType img{
+    transform: rotate(90deg);
+}
+.desktopFilterTypeValue label{
+    padding-left: 11px;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+    line-height: 14px;
+    font-family: regular;
+}

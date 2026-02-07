@@ -116,7 +116,33 @@
     color: #212121;
     font-family: regular1;
     font-weight: 400;
-
+}
+.assureImage{
+    display: flex;
+    column-gap: 10px;
+    padding: 16px;
+    align-items: center;
+}
+.assureImage img{
+ height: 21px;
+}
+.avalability{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 16px;
+    align-items: center;
+}
+.avalability p {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    line-height: 18.2px;
+    color: rgb(33, 33, 33);
+    font-family: semiBold;
+}
+.avalability img{
+    transform: rotate(-90deg);
+    height: 10px;
 }
 @media screen and (min-width:1024px) {
     .DesktopFilterSide{

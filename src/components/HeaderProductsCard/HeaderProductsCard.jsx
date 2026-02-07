@@ -3,6 +3,7 @@ import style from "./HeaderProCard.module.css";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { sortOpenContext } from "../../App";
+import { sortValueContext } from "../../App";
 import { brandFiltercontext } from "../../App";
 import { connectFiltercontext } from "../../App";
 import { colorFiltercontext } from "../../App";
@@ -17,7 +18,7 @@ function HeaderProductsCard() {
   const { open, setOpen } = useContext(sortOpenContext);
   const [product, setProduct] = useState([]);
   const [allProducts, setAllproducts] = useState([]);
-  const [getvalue, setGetvalue] = useState(" ");
+  const {getvalue, setGetvalue} = useContext(sortValueContext)
   const { brand, setBrand } = useContext(brandFiltercontext);
   const {connect,setConnect} = useContext(connectFiltercontext);
   const {color,setColor} = useContext(colorFiltercontext);
@@ -30,7 +31,6 @@ function HeaderProductsCard() {
     setOpen(!open);
     setGetvalue(e.target.value);
   }
-  console.log(brand);
   useEffect(() => {
     if (getvalue === "lowToHigh") {
       setProduct([...allProducts].sort((a, b) => a.price - b.price));

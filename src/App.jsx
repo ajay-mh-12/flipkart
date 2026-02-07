@@ -11,6 +11,7 @@ import { createContext, useState } from "react";
 import FilterPage from "./FilterPage/FilterPage";
 import DesktopFilterMain from "./DesktopFilterMain/DesktopFilterMain";
 export const sortOpenContext = createContext();
+export const sortValueContext = createContext();
 export const brandFiltercontext = createContext();
 export const colorFiltercontext = createContext();
 export const connectFiltercontext = createContext();
@@ -20,6 +21,7 @@ export const featuresFiltercontext = createContext();
 export const typesFiltercontext = createContext();
 function App() {
   const [open, setOpen] = useState(false);
+  const [getvalue, setGetvalue] = useState(" ");
   const [brand, setBrand] = useState([]);
   const [color, setColor] = useState([]);
   const [connect, setConnect] = useState([]);
@@ -39,51 +41,52 @@ function App() {
                   value={{ features, setFeatures }}
                 >
                   <typesFiltercontext.Provider value={{ type, setType }}>
-                    <BrowserRouter>
-                      <Routes>
-                        <Route
-                          path="/"
-                          element={
-                            <>
-                              <Header></Header>
-                              <MainBody />
-                            </>
-                          }
-                        />
+                    <sortValueContext.Provider value={{getvalue, setGetvalue}}>
+                      <BrowserRouter>
+                        <Routes>
+                          <Route
+                            path="/"
+                            element={
+                              <>
+                                <Header></Header>
+                                <MainBody />
+                              </>
+                            }
+                          />
 
-                        {/* Product page */}
-                        <Route
-                          path="/productList"
-                          element={
-                            <>
-                              <Headset />
-                              <HeadsetProductPage />
-                              <DesktopFilterMain/>
-                              {/* <HeaderProductsCard /> */}
+                          {/* Product page */}
+                          <Route
+                            path="/productList"
+                            element={
+                              <>
+                                <Headset />
+                                <HeadsetProductPage />
+                                <DesktopFilterMain />
+                                {/* <HeaderProductsCard /> */}
+                              </>
+                            }
+                          />
 
-                            </>
-                          }
-                        />
-
-                        {/* {product card} */}
-                        <Route
-                          path="/productCard"
-                          element={
-                            <>
-                              <ProductDetailsMain />
-                            </>
-                          }
-                        />
-                        <Route
-                          path="/Filter"
-                          element={
-                            <>
-                              <FilterPage />
-                            </>
-                          }
-                        />
-                      </Routes>
-                    </BrowserRouter>
+                          {/* {product card} */}
+                          <Route
+                            path="/productCard"
+                            element={
+                              <>
+                                <ProductDetailsMain />
+                              </>
+                            }
+                          />
+                          <Route
+                            path="/Filter"
+                            element={
+                              <>
+                                <FilterPage />
+                              </>
+                            }
+                          />
+                        </Routes>
+                      </BrowserRouter>
+                    </sortValueContext.Provider>
                   </typesFiltercontext.Provider>
                 </featuresFiltercontext.Provider>
               </ratingFiltercontext.Provider>
