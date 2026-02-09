@@ -1,6 +1,6 @@
 import { React } from "react";
 import style from "./DesktopPriceFilter.module.css";
-import { useState } from "react";
+import { useState,useContext } from "react";
 function DesktopPriceFilter() {
     const [minprice,setMinPrice] = useState(0);
     const [maxprice,setMaxPrice] = useState(5000);

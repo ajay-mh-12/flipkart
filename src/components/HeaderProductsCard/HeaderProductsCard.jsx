@@ -11,6 +11,7 @@ import { discountFiltercontext } from "../../App";
 import { ratingFiltercontext } from "../../App";
 import { featuresFiltercontext } from "../../App";
 import { typesFiltercontext } from "../../App";
+import { priceFiltercontext } from "../../App";
 import star from "./HeaderProductCardImage/star-svgrepo-com (2).svg"
 import whiteStar from "./HeaderProductCardImage/star-svgrepo-com (3).svg"
 
@@ -26,6 +27,7 @@ function HeaderProductsCard() {
   const {rateing,setRateing} = useContext(ratingFiltercontext);
   const {features,setFeatures} = useContext(featuresFiltercontext);
   const {type,setType} = useContext(typesFiltercontext);
+  const {price,setPrice} = useContext(priceFiltercontext);
 
   function handleValue(e) {
     setOpen(!open);
@@ -98,6 +100,42 @@ useEffect(() => {
   if(type.length > 0) {
     filtered = filtered.filter(item => type.includes(item.type))
   }
+  if(price){
+    filtered = filtered.filter(item =>{
+      switch(price){
+        case 600:
+          return item.price <= price;
+          break;
+        case 1000:
+          return item.price >= 600 && item.price <= price;
+          break;
+        case 1500:
+          return item.price >= 1000 && item.price <= price;
+          break; 
+        case 2000:
+          return item.price >= 1500 && item.price <= price;
+          break;
+        case 2600:
+          return item.price >= 2000 && item.price <= price;
+          break;
+        case 4000:
+          return item.price >= 2600 && item.price <= price;
+          break;
+        case 7000:
+          return item.price >= 4000 && item.price <= price;
+          break;
+        case 10000:
+          return item.price >= 7000 && item.price <= price;
+          break;
+          case 10001:
+            return item.price > price;
+            break;            
+        default:
+
+          return item
+      }
+    })
+  }
 
   setProduct(filtered);
 },[brand,
@@ -107,6 +145,7 @@ useEffect(() => {
   rateing,
   features,
   type,
+  price,
   allProducts
 ]);
 

@@ -12,7 +12,7 @@ import Calculation from "./HeadsetHeaderImages/Calculation.webp";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 
-import { sortOpenContext } from "../../App";
+import { priceFiltercontext, sortOpenContext } from "../../App";
 import { brandFiltercontext } from "../../App";
 import { connectFiltercontext } from "../../App";
 import { colorFiltercontext } from "../../App";
@@ -32,6 +32,7 @@ const {discount,setDiscount} = useContext(discountFiltercontext)
 const {rateing,setRateing} = useContext(ratingFiltercontext)
 const {features,setFeatures} =useContext(featuresFiltercontext)
 const {type,setType}=useContext(typesFiltercontext)
+const {price,setPrice}=useContext(priceFiltercontext)
 
 
 
@@ -44,6 +45,7 @@ function fliterClick() {
   setRateing([]);
   setFeatures([]);
   setType([]);
+  setPrice([]);
 }
 
   function handleOpen() {

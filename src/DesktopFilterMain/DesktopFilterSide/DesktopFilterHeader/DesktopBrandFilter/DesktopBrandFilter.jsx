@@ -6,10 +6,14 @@ import { useState,useContext } from 'react';
 import { brandFiltercontext } from '../../../../App';
 function DesktopBrandFilter() {
     const[open,setOpen] = useState(false)
-    //   const [brand, setBrand] = useContext(brandFiltercontext)
-    //   function handleClick(e){
-    //        setBrand(e.target.value)
-    //   }
+      const {brand, setBrand} = useContext(brandFiltercontext)
+      function handleClick(e){
+        if(e.target.checked){
+            setBrand((prev) => [...prev, e.target.value])
+        }else{
+            setBrand(prev=>prev.filter(item=>item !== e.target.value))
+        }
+        }
     return (
         <>
         <div className={`${style.filterBrand} ${open ? style.open : ""}`} onClick={()=>setOpen(!open)} >
@@ -23,27 +27,27 @@ function DesktopBrandFilter() {
                     <input type="text" placeholder='Search Brand'/>
                 </div>
                 <div className={style.boat} >
-                    <input type="checkbox" id='boat' value="boat"  />
+                    <input type="checkbox" id='boat' value="boat"  onChange={handleClick} />
                     <label htmlFor="boat">boAt</label>
                 </div>
                 <div className={style.boat} >
-                    <input type="checkbox" id='oneplus' value="oneplus"  />
+                    <input type="checkbox" id='oneplus' value="oneplus" onChange={handleClick} />
                     <label htmlFor="oneplus">OnePlus</label>
                 </div>
                 <div className={style.boat} >
-                    <input type="checkbox" id='realme' value="realme"  />
+                    <input type="checkbox" id='realme' value="realme"onChange={handleClick}    />
                     <label htmlFor="realme">realme</label>
                 </div>
                 <div className={style.boat} >
-                    <input type="checkbox" id='noise' value="noise"  />
+                    <input type="checkbox" id='noise' value="noise"  onChange={handleClick} />
                     <label htmlFor="noise">Noise</label>
                 </div>
                 <div className={style.boat}>
-                    <input type="checkbox" id='jbl' value="jbl"  />
+                    <input type="checkbox" id='jbl' value="jbl" onChange={handleClick}  />
                     <label htmlFor="jbl">JBL</label>
                 </div>
                 <div className={style.boat} >
-                    <input type="checkbox" id='cmf' value="cmf"   />
+                    <input type="checkbox" id='cmf' value="cmf" onChange={handleClick}  />
                     <label htmlFor="cmf">CMF by Nothing</label>
                 </div>
                 <div className={style.more}>

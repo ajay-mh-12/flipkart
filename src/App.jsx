@@ -19,6 +19,7 @@ export const discountFiltercontext = createContext();
 export const ratingFiltercontext = createContext();
 export const featuresFiltercontext = createContext();
 export const typesFiltercontext = createContext();
+export const priceFiltercontext = createContext();
 function App() {
   const [open, setOpen] = useState(false);
   const [getvalue, setGetvalue] = useState(" ");
@@ -29,6 +30,7 @@ function App() {
   const [rateing, setRateing] = useState([]);
   const [features, setFeatures] = useState([]);
   const [type, setType] = useState([]);
+  const [price, setPrice] = useState();
 
   return (
     <brandFiltercontext.Provider value={{ brand, setBrand }}>
@@ -41,51 +43,55 @@ function App() {
                   value={{ features, setFeatures }}
                 >
                   <typesFiltercontext.Provider value={{ type, setType }}>
-                    <sortValueContext.Provider value={{getvalue, setGetvalue}}>
-                      <BrowserRouter>
-                        <Routes>
-                          <Route
-                            path="/"
-                            element={
-                              <>
-                                <Header></Header>
-                                <MainBody />
-                              </>
-                            }
-                          />
+                    <sortValueContext.Provider
+                      value={{ getvalue, setGetvalue }}
+                    >
+                      <priceFiltercontext.Provider value={{ price, setPrice }}>
+                        <BrowserRouter>
+                          <Routes>
+                            <Route
+                              path="/"
+                              element={
+                                <>
+                                  <Header></Header>
+                                  <MainBody />
+                                </>
+                              }
+                            />
 
-                          {/* Product page */}
-                          <Route
-                            path="/productList"
-                            element={
-                              <>
-                                <Headset />
-                                <HeadsetProductPage />
-                                <DesktopFilterMain />
-                                {/* <HeaderProductsCard /> */}
-                              </>
-                            }
-                          />
+                            {/* Product page */}
+                            <Route
+                              path="/productList"
+                              element={
+                                <>
+                                  <Headset />
+                                  <HeadsetProductPage />
+                                  <DesktopFilterMain />
+                                  {/* <HeaderProductsCard /> */}
+                                </>
+                              }
+                            />
 
-                          {/* {product card} */}
-                          <Route
-                            path="/productCard"
-                            element={
-                              <>
-                                <ProductDetailsMain />
-                              </>
-                            }
-                          />
-                          <Route
-                            path="/Filter"
-                            element={
-                              <>
-                                <FilterPage />
-                              </>
-                            }
-                          />
-                        </Routes>
-                      </BrowserRouter>
+                            {/* {product card} */}
+                            <Route
+                              path="/productCard"
+                              element={
+                                <>
+                                  <ProductDetailsMain />
+                                </>
+                              }
+                            />
+                            <Route
+                              path="/Filter"
+                              element={
+                                <>
+                                  <FilterPage />
+                                </>
+                              }
+                            />
+                          </Routes>
+                        </BrowserRouter>
+                      </priceFiltercontext.Provider>
                     </sortValueContext.Provider>
                   </typesFiltercontext.Provider>
                 </featuresFiltercontext.Provider>
