@@ -15,6 +15,7 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
+    "deskRating":3,
     "bank":"Bank Offer"
   },
   {
@@ -33,6 +34,7 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
+    "deskRating":3,
     "bank":"Only few left"
   },
   {
@@ -51,7 +53,8 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
-    "bank":"Bank Offer"
+    "bank":"Bank Offer",
+    "deskRating":3
   },
   {
     "id": 4,
@@ -69,6 +72,7 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 2,
+    "deskRating":2,
     "bank":"Only few left"
   },
   {
@@ -87,6 +91,7 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 2,
+    "deskRating":2,
     "bank":"Bank Offer"
     
   },
@@ -106,6 +111,7 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 3,
+    "deskRating":3,
     "bank":"Only few left"
   },
   {
@@ -124,6 +130,7 @@
     "feature": "deepBass",
     "type": "trueWireless",
     "rating": 4,
+    "deskRating":4,
     "bank":"Bank Offer"
   },
   {
@@ -140,6 +147,7 @@
     "connectivity": "bluetooth",
     "color": "black",
     "rating": 4,
+    "deskRating":4,
     "feature": "deepBass",
     "type": "trueWireless",
     "bank":"Only few left"
@@ -158,6 +166,7 @@
     "connectivity": "blueWired",
     "color": "grey",
     "rating": 4,
+    "deskRating":4,
     "feature": "deepBass",
     "type": "trueWireless",
     "bank":"Bank Offer"
@@ -175,6 +184,7 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
+    "deskRating":4,
     "feature": "deepBass",
     "bank":"Only few left"
   },
@@ -191,6 +201,7 @@
     "connectivity": "wired",
     "color": "blue",
     "rating": 1,
+    "deskRating":1,
     "feature": "fastCharge",
     "bank":"Bank Offer"
   },
@@ -207,6 +218,7 @@
     "connectivity": "bluetooth",
     "color": "pink",
     "rating": 4,
+    "deskRating":4,
     "feature": "noiseCan",
     "bank":"Only few left"
   },
@@ -223,6 +235,7 @@
     "connectivity": "blueWired",
     "color": "black",
     "rating": 4,
+    "deskRating":4,
     "feature": "deepBass",
     "bank":"Bank Offer"
   },
@@ -239,6 +252,7 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
+    "deskRating":4,
     "feature": "noiseCan",
     "bank":"Only few left"
   },
@@ -255,6 +269,7 @@
     "connectivity": "bluetooth",
     "color": "green",
     "rating": 3,
+    "deskRating":3,
     "feature": "fastCharge",
     "bank":"Bank Offer"
   },
@@ -271,6 +286,7 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 3,
+    "deskRating":3,
     "feature": "deepBass",
     "bank":"Only few left"
   }

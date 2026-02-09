@@ -215,7 +215,7 @@ useEffect(() => {
                 })}
               </div>
               <div className={style.starDesk}>
-                <p>3</p>
+                <p>{item.deskRating}</p>
                 <img src={whiteStar} alt="" />
               </div>
               <div className={style.bank}>

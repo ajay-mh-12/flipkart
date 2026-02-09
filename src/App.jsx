@@ -20,6 +20,7 @@ export const ratingFiltercontext = createContext();
 export const featuresFiltercontext = createContext();
 export const typesFiltercontext = createContext();
 export const priceFiltercontext = createContext();
+export const DesktopPriceFiltercontext = createContext();
 function App() {
   const [open, setOpen] = useState(false);
   const [getvalue, setGetvalue] = useState(" ");
@@ -31,6 +32,10 @@ function App() {
   const [features, setFeatures] = useState([]);
   const [type, setType] = useState([]);
   const [price, setPrice] = useState();
+  const [sliderPrice,setSliderPrice] = useState({
+    minPrice:0,
+    maxPrice:5000
+  })
 
   return (
     <brandFiltercontext.Provider value={{ brand, setBrand }}>
@@ -47,6 +52,8 @@ function App() {
                       value={{ getvalue, setGetvalue }}
                     >
                       <priceFiltercontext.Provider value={{ price, setPrice }}>
+                        <DesktopPriceFiltercontext.Provider value={{sliderPrice,setSliderPrice}}>
+
                         <BrowserRouter>
                           <Routes>
                             <Route
@@ -57,7 +64,7 @@ function App() {
                                   <MainBody />
                                 </>
                               }
-                            />
+                              />
 
                             {/* Product page */}
                             <Route
@@ -70,7 +77,7 @@ function App() {
                                   {/* <HeaderProductsCard /> */}
                                 </>
                               }
-                            />
+                              />
 
                             {/* {product card} */}
                             <Route
@@ -80,7 +87,7 @@ function App() {
                                   <ProductDetailsMain />
                                 </>
                               }
-                            />
+                              />
                             <Route
                               path="/Filter"
                               element={
@@ -88,9 +95,10 @@ function App() {
                                   <FilterPage />
                                 </>
                               }
-                            />
+                              />
                           </Routes>
                         </BrowserRouter>
+                      </DesktopPriceFiltercontext.Provider>
                       </priceFiltercontext.Provider>
                     </sortValueContext.Provider>
                   </typesFiltercontext.Provider>

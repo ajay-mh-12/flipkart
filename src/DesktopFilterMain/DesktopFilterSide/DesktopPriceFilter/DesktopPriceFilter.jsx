@@ -1,22 +1,30 @@
 import { React } from "react";
 import style from "./DesktopPriceFilter.module.css";
 import { useState,useContext } from "react";
+import { DesktopPriceFiltercontext } from "../../../App";
+
 function DesktopPriceFilter() {
-    const [minprice,setMinPrice] = useState(0);
-    const [maxprice,setMaxPrice] = useState(5000);
+  const{sliderPrice,setSliderPrice} = useContext(DesktopPriceFiltercontext)
+    // const [minprice,setMinPrice] = useState(0);
+    // const [maxprice,setMaxPrice] = useState(5000);
+   
 
     function handleMinChange(e){
         const value =  Number(e.target.value);
-        if(value <= maxprice){
-          setMinPrice(value)
-        }
+        setSliderPrice( prev => ({
+          ...prev,
+          minPrice: Math.min(value,prev.maxPrice) 
+        })
+        )  
     };
 
-    function handleMaxchange(e){
+    function handleMaxChange(e){
       const value = Number(e.target.value);
-        if(value >= minprice){
-          setMaxPrice(value)
-        }
+        setSliderPrice( prev =>({
+          ...prev,
+          maxPrice: Math.max(value,prev.minPrice) 
+        })
+        )
       }
     
     
@@ -32,12 +40,12 @@ function DesktopPriceFilter() {
                 <div className={style.sliderMdiv}></div>
             </div>
           <div className={style.slider}></div>
-          <input type="range" min={0} max={5000}  value={minprice} onChange={handleMinChange} />
-          <input type="range" min={0} max={5000} value={maxprice}  onChange={handleMaxchange}/>
+          <input type="range" min={0} max={5000}  value={sliderPrice.minPrice} onChange={handleMinChange} />
+          <input type="range" min={0} max={5000} value={sliderPrice.maxPrice}  onChange={handleMaxChange}/>
         </div>
         <div className={style.priceBox}>
           <div className={style.minPrice}>
-            <select className={style.min}  onChange={handleMinChange}>
+            <select className={style.min} value={sliderPrice.minPrice}  onChange={handleMinChange}>
               <option value="0">Min</option>
               <option value="600">600</option>
               <option value="1000">1000</option>
@@ -49,7 +57,7 @@ function DesktopPriceFilter() {
             <p>to</p>
           </div>
           <div className={style.maxPrice}>
-            <select className={style.max} defaultValue="5000"  onChange={handleMaxchange} >
+            <select className={style.max}   value={sliderPrice.maxPrice} onChange={handleMaxChange} >
               <option value="600">600</option>
               <option value="1000">1000</option>
               <option value="1500">1500</option>
