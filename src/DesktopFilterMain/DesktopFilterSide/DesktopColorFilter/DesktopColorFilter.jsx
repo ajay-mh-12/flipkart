@@ -15,8 +15,8 @@ function DesktopColorFilter() {
  }
     return (
         <>
-        <div className={`${style.desktopColorMain} ${open ? style.open : ""}`} onClick={()=>setOpen(!open)} >
-            <div className={style.desktopColor}>
+        <div className={`${style.desktopColorMain} ${open ? style.open : ""}`}  >
+            <div className={style.desktopColor} onClick={()=>setOpen(!open)}>
                 <p>COLOR</p>
                 <img src={arrow} alt="" />
             </div>

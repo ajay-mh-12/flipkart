@@ -15,8 +15,8 @@ function DesktopFilterRating() {
     }
     return (
         <>
-        <div className={`${style.DesktopFilterRatingMain} ${open ? style.open : ""}`} onClick={()=>setOpen(!open)}>
-            <div className={style.DesktopFilterRating}>
+        <div className={`${style.DesktopFilterRatingMain} ${open ? style.open : ""}`}>
+            <div className={style.DesktopFilterRating}  onClick={()=>setOpen(!open)}>
                 <p>CUSTOMER RATINGS</p>
                 <img src={arrow} alt="" />
             </div>

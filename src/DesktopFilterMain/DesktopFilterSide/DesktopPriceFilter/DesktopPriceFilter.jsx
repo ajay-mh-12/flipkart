@@ -26,6 +26,8 @@ function DesktopPriceFilter() {
         })
         )
       }
+
+      
     
     
   return (

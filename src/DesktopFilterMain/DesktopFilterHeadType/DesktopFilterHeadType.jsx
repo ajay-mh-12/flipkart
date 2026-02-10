@@ -15,8 +15,8 @@ function DesktopFilterHeadType() {
     }
     return (
         <>
-        <div className={`${style.DesktopFilterHeadTypeMain} ${open ? style.open : " "}`} onClick={()=>setOpen(!open)}>
-            <div className={style.DesktopFilterType}>
+        <div className={`${style.DesktopFilterHeadTypeMain} ${open ? style.open : " "}`} >
+            <div className={style.DesktopFilterType} onClick={()=>setOpen(!open)}>
                 <p>HEADPHONE TYPE</p>
                 <img src={arrow} alt="arrow" />
             </div>

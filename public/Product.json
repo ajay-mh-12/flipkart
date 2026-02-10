@@ -15,8 +15,8 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
-    "deskRating":3,
-    "bank":"Bank Offer"
+    "deskRating": 3,
+    "bank": "Bank Offer"
   },
   {
     "id": 2,
@@ -34,8 +34,8 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
-    "deskRating":3,
-    "bank":"Only few left"
+    "deskRating": 3,
+    "bank": "Only few left"
   },
   {
     "id": 3,
@@ -53,8 +53,8 @@
     "feature": "fastCharge",
     "type": "ontheEar",
     "rating": 3,
-    "bank":"Bank Offer",
-    "deskRating":3
+    "bank": "Bank Offer",
+    "deskRating": 3
   },
   {
     "id": 4,
@@ -72,14 +72,14 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 2,
-    "deskRating":2,
-    "bank":"Only few left"
+    "deskRating": 2,
+    "bank": "Only few left"
   },
   {
     "id": 5,
     "image": "https://rukminim2.flixcart.com/image/376/450/xif0q/headphone/u/4/d/-original-imah9x5amfhetsmz.jpeg?q=60&crop=false",
     "name": "CMF by Nothing",
-    "brand": "cmfnothing",
+    "brand": "cmf",
     "price": 1230,
     "discount": 3000,
     "subname": "Airdopes 161, Adv 4Mic",
@@ -91,9 +91,8 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 2,
-    "deskRating":2,
-    "bank":"Bank Offer"
-    
+    "deskRating": 2,
+    "bank": "Bank Offer"
   },
   {
     "id": 6,
@@ -111,8 +110,8 @@
     "feature": "noiseCan",
     "type": "intheEar",
     "rating": 3,
-    "deskRating":3,
-    "bank":"Only few left"
+    "deskRating": 3,
+    "bank": "Only few left"
   },
   {
     "id": 7,
@@ -130,8 +129,8 @@
     "feature": "deepBass",
     "type": "trueWireless",
     "rating": 4,
-    "deskRating":4,
-    "bank":"Bank Offer"
+    "deskRating": 4,
+    "bank": "Bank Offer"
   },
   {
     "id": 8,
@@ -147,10 +146,10 @@
     "connectivity": "bluetooth",
     "color": "black",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "deepBass",
     "type": "trueWireless",
-    "bank":"Only few left"
+    "bank": "Only few left"
   },
   {
     "id": 9,
@@ -166,10 +165,10 @@
     "connectivity": "blueWired",
     "color": "grey",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "deepBass",
     "type": "trueWireless",
-    "bank":"Bank Offer"
+    "bank": "Bank Offer"
   },
   {
     "id": 10,
@@ -184,9 +183,9 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "deepBass",
-    "bank":"Only few left"
+    "bank": "Only few left"
   },
   {
     "id": 11,
@@ -201,9 +200,9 @@
     "connectivity": "wired",
     "color": "blue",
     "rating": 1,
-    "deskRating":1,
+    "deskRating": 1,
     "feature": "fastCharge",
-    "bank":"Bank Offer"
+    "bank": "Bank Offer"
   },
   {
     "id": 12,
@@ -218,9 +217,9 @@
     "connectivity": "bluetooth",
     "color": "pink",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "noiseCan",
-    "bank":"Only few left"
+    "bank": "Only few left"
   },
   {
     "id": 13,
@@ -235,9 +234,9 @@
     "connectivity": "blueWired",
     "color": "black",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "deepBass",
-    "bank":"Bank Offer"
+    "bank": "Bank Offer"
   },
   {
     "id": 14,
@@ -252,9 +251,9 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 4,
-    "deskRating":4,
+    "deskRating": 4,
     "feature": "noiseCan",
-    "bank":"Only few left"
+    "bank": "Only few left"
   },
   {
     "id": 15,
@@ -269,9 +268,9 @@
     "connectivity": "bluetooth",
     "color": "green",
     "rating": 3,
-    "deskRating":3,
+    "deskRating": 3,
     "feature": "fastCharge",
-    "bank":"Bank Offer"
+    "bank": "Bank Offer"
   },
   {
     "id": 16,
@@ -286,8 +285,8 @@
     "connectivity": "wired",
     "color": "black",
     "rating": 3,
-    "deskRating":3,
+    "deskRating": 3,
     "feature": "deepBass",
-    "bank":"Only few left"
+    "bank": "Only few left"
   }
 ]

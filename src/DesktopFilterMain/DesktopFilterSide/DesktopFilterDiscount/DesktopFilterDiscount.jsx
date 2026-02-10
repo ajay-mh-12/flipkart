@@ -15,8 +15,8 @@ function DesktopFilterDiscount() {
     }
     return (
         <>
-        <div className={`${style.discountMain} ${open ? style.open : ""}`} onClick={()=>setOpen(!open)} >
-            <div className={style.discount}>
+        <div className={`${style.discountMain} ${open ? style.open : ""}`}  >
+            <div className={style.discount} onClick={()=>setOpen(!open)}>
                 <p>DISCOUNT</p>
                 <img src={arrow} alt="" />
             </div>

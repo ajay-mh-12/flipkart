@@ -16,8 +16,8 @@ function DesktopBrandFilter() {
         }
     return (
         <>
-        <div className={`${style.filterBrand} ${open ? style.open : ""}`} onClick={()=>setOpen(!open)} >
-            <div className={style.brandMain} >
+        <div className={`${style.filterBrand} ${open ? style.open : ""}`} >
+            <div className={style.brandMain} onClick={()=>setOpen(!open)}  >
                 <h4>BRAND</h4>
                 <img src={arrow} alt="downArrow" />
             </div>

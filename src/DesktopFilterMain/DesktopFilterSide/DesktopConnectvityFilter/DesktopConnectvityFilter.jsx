@@ -16,8 +16,8 @@ function DesktopConnectvityFilter() {
 
     return (
         <>
-        <div className={`${style.connectivityMain} ${open ? style.open : ''}`} onClick={()=>setOpen(!open)}>
-            <div className={style.connectivity}>
+        <div className={`${style.connectivityMain} ${open ? style.open : ''}`}>
+            <div className={style.connectivity}  onClick={()=>setOpen(!open)}>
                 <p>CONNECTIVITY</p>
                 <img src={arrow} alt="" />
             </div>

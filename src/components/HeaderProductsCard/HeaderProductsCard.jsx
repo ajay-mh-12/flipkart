@@ -12,22 +12,24 @@ import { ratingFiltercontext } from "../../App";
 import { featuresFiltercontext } from "../../App";
 import { typesFiltercontext } from "../../App";
 import { priceFiltercontext } from "../../App";
-import star from "./HeaderProductCardImage/star-svgrepo-com (2).svg"
-import whiteStar from "./HeaderProductCardImage/star-svgrepo-com (3).svg"
+import { DesktopPriceFiltercontext } from "../../App";
+import star from "./HeaderProductCardImage/star-svgrepo-com (2).svg";
+import whiteStar from "./HeaderProductCardImage/star-svgrepo-com (3).svg";
 
 function HeaderProductsCard() {
   const { open, setOpen } = useContext(sortOpenContext);
   const [product, setProduct] = useState([]);
   const [allProducts, setAllproducts] = useState([]);
-  const {getvalue, setGetvalue} = useContext(sortValueContext)
+  const { getvalue, setGetvalue } = useContext(sortValueContext);
   const { brand, setBrand } = useContext(brandFiltercontext);
-  const {connect,setConnect} = useContext(connectFiltercontext);
-  const {color,setColor} = useContext(colorFiltercontext);
-  const {discount,setDiscount} = useContext(discountFiltercontext);
-  const {rateing,setRateing} = useContext(ratingFiltercontext);
-  const {features,setFeatures} = useContext(featuresFiltercontext);
-  const {type,setType} = useContext(typesFiltercontext);
-  const {price,setPrice} = useContext(priceFiltercontext);
+  const { connect, setConnect } = useContext(connectFiltercontext);
+  const { color, setColor } = useContext(colorFiltercontext);
+  const { discount, setDiscount } = useContext(discountFiltercontext);
+  const { rateing, setRateing } = useContext(ratingFiltercontext);
+  const { features, setFeatures } = useContext(featuresFiltercontext);
+  const { type, setType } = useContext(typesFiltercontext);
+  const { price, setPrice } = useContext(priceFiltercontext);
+  const { sliderPrice, setSliderPrice } = useContext(DesktopPriceFiltercontext);
 
   function handleValue(e) {
     setOpen(!open);
@@ -50,7 +52,6 @@ function HeaderProductsCard() {
     }
   }, [getvalue, allProducts]);
 
-  
   useEffect(() => {
     fetch("/Product.json")
       .then((res) => res.json())
@@ -61,99 +62,106 @@ function HeaderProductsCard() {
       .catch((err) => console.error(err));
   }, []);
 
-useEffect(() => {
-  let filtered = allProducts;
+  useEffect(() => {
+    let filtered = allProducts;
 
-  // Brand // 
-  if(brand.length > 0) {
-    filtered = filtered.filter(item => brand.includes(item.brand))
-  }
-  
-  // Connectivity // 
-  if(connect.length > 0) {
-    filtered = filtered.filter(item => connect.includes(item.connectivity))
-  }
+    // Brand //
+    if (brand.length > 0) {
+      filtered = filtered.filter((item) => brand.includes(item.brand));
+    }
 
-  // color // 
-  if(color.length > 0) {
-    filtered = filtered.filter(item => color.includes(item.color))
-  }
+    // Connectivity //
+    if (connect.length > 0) {
+      filtered = filtered.filter((item) => connect.includes(item.connectivity));
+    }
 
-  // discount // 
-  if(discount.length > 0) {
-    filtered = filtered.filter(item => 
-     discount.some(p => item.presentage >= p)
-    )
-  }
+    // color //
+    if (color.length > 0) {
+      filtered = filtered.filter((item) => color.includes(item.color));
+    }
 
-  // Rating // 
-  if(rateing.length > 0) {
-    filtered = filtered.filter(item => rateing.some (m =>item.rating >= m))
-  }
+    // discount //
+    if (discount.length > 0) {
+      filtered = filtered.filter((item) =>
+        discount.some((p) => item.presentage >= p),
+      );
+    }
 
-  // feautres // 
-  if(features.length > 0) {
-    filtered = filtered.filter(item => features.includes(item.feature))
-  }
-   
-  // type // 
-  if(type.length > 0) {
-    filtered = filtered.filter(item => type.includes(item.type))
-  }
-  if(price){
-    filtered = filtered.filter(item =>{
-      switch(price){
-        case 600:
-          return item.price <= price;
-          break;
-        case 1000:
-          return item.price >= 600 && item.price <= price;
-          break;
-        case 1500:
-          return item.price >= 1000 && item.price <= price;
-          break; 
-        case 2000:
-          return item.price >= 1500 && item.price <= price;
-          break;
-        case 2600:
-          return item.price >= 2000 && item.price <= price;
-          break;
-        case 4000:
-          return item.price >= 2600 && item.price <= price;
-          break;
-        case 7000:
-          return item.price >= 4000 && item.price <= price;
-          break;
-        case 10000:
-          return item.price >= 7000 && item.price <= price;
-          break;
+    // Rating //
+    if (rateing.length > 0) {
+      filtered = filtered.filter((item) =>
+        rateing.some((m) => item.rating >= m),
+      );
+    }
+
+    // feautres //
+    if (features.length > 0) {
+      filtered = filtered.filter((item) => features.includes(item.feature));
+    }
+
+    // type //
+    if (type.length > 0) {
+      filtered = filtered.filter((item) => type.includes(item.type));
+    }
+    if (price) {
+      filtered = filtered.filter((item) => {
+        switch (price) {
+          case 600:
+            return item.price <= price;
+            break;
+          case 1000:
+            return item.price >= 600 && item.price <= price;
+            break;
+          case 1500:
+            return item.price >= 1000 && item.price <= price;
+            break;
+          case 2000:
+            return item.price >= 1500 && item.price <= price;
+            break;
+          case 2600:
+            return item.price >= 2000 && item.price <= price;
+            break;
+          case 4000:
+            return item.price >= 2600 && item.price <= price;
+            break;
+          case 7000:
+            return item.price >= 4000 && item.price <= price;
+            break;
+          case 10000:
+            return item.price >= 7000 && item.price <= price;
+            break;
           case 10001:
             return item.price > price;
-            break;            
-        default:
+            break;
+          default:
+            return item;
+        }
+      });
+    }
 
-          return item
-      }
-    })
-  }
+    if(sliderPrice) {
+      filtered = filtered.filter((item) => {
+        return item.price >= sliderPrice.minPrice && item.price <= sliderPrice.maxPrice;
+      })
+    }
 
-  setProduct(filtered);
-},[brand,
-  connect,
-  color,
-  discount,
-  rateing,
-  features,
-  type,
-  price,
-  allProducts
-]);
-
-
-  const navigate = useNavigate();
-
- 
+    
+    setProduct(filtered);
+  }, [
+    brand,
+    connect,
+    color,
+    discount,
+    rateing,
+    features,
+    type,
+    price,
+    sliderPrice,
+    allProducts,
+  ]);
   
+  
+  const navigate = useNavigate();
 
   return (
     <>
@@ -196,22 +204,24 @@ useEffect(() => {
                 <h4>₹{item.price}</h4>
               </div>
               <div>
-                <img 
+                <img
                   src="https://rukminim2.flixcart.com/www/76/32/promos/30/08/2023/59dc7885-72bf-4135-9099-025f074b0eb1.png?q=90"
                   alt=""
                 />
                 <span>$684 with 2 offers</span>
               </div>
               <div className={style.star}>
-                { new Array(item.rating).fill(0).map((_, index) => {
-                  return  <img key={index}
-                  src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%2326A541'%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='800px'%20height='800px'%20viewBox='0%200%20126.729%20126.73'%20xml:space='preserve'%20stroke='%2326A541'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cg%3e%3cpath%20d='M121.215,44.212l-34.899-3.3c-2.2-0.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101,0l-12.4,30.3%20c-0.8,2.1-2.8,3.5-5,3.7l-34.9,3.3c-5.2,0.5-7.3,7-3.4,10.5l26.3,23.1c1.7,1.5,2.4,3.7,1.9,5.9l-7.9,32.399%20c-1.2,5.101,4.3,9.3,8.9,6.601l29.1-17.101c1.9-1.1,4.2-1.1,6.1,0l29.101,17.101c4.6,2.699,10.1-1.4,8.899-6.601l-7.8-32.399%20c-0.5-2.2,0.2-4.4,1.9-5.9l26.3-23.1C128.615,51.212,126.415,44.712,121.215,44.212z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
-                  alt=""
-                />
+                {new Array(item.rating).fill(0).map((_, index) => {
+                  return (
+                    <img
+                      key={index}
+                      src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%2326A541'%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='800px'%20height='800px'%20viewBox='0%200%20126.729%20126.73'%20xml:space='preserve'%20stroke='%2326A541'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cg%3e%3cpath%20d='M121.215,44.212l-34.899-3.3c-2.2-0.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101,0l-12.4,30.3%20c-0.8,2.1-2.8,3.5-5,3.7l-34.9,3.3c-5.2,0.5-7.3,7-3.4,10.5l26.3,23.1c1.7,1.5,2.4,3.7,1.9,5.9l-7.9,32.399%20c-1.2,5.101,4.3,9.3,8.9,6.601l29.1-17.101c1.9-1.1,4.2-1.1,6.1,0l29.101,17.101c4.6,2.699,10.1-1.4,8.899-6.601l-7.8-32.399%20c-0.5-2.2,0.2-4.4,1.9-5.9l26.3-23.1C128.615,51.212,126.415,44.712,121.215,44.212z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+                      alt=""
+                    />
+                  );
                 })}
-                { new Array(5 - item.rating).fill(5).map((_, i) => {
-                  return <img  key={i} src={star} alt="" />
-                  
+                {new Array(5 - item.rating).fill(5).map((_, i) => {
+                  return <img key={i} src={star} alt="" />;
                 })}
               </div>
               <div className={style.starDesk}>
@@ -220,7 +230,7 @@ useEffect(() => {
               </div>
               <div className={style.bank}>
                 <p>{item.bank}</p>
-                </div>
+              </div>
             </div>
           </div>
         ))}
