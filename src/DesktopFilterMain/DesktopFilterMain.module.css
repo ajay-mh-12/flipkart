@@ -1,9 +1,4 @@
-.desktopMainFilter{
-    /* display: none; */
-}
-.desktopMainFilter{
-    /* display: none; */
-}
+
 @media screen and (min-width:1024px) {
     .desktopMainFilter{
         display: block;
