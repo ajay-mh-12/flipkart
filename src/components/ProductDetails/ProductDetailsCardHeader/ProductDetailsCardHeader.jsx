@@ -7,6 +7,7 @@ function ProductDetailsCardHeader() {
   return (
     <>
       <div className={style.ProductDetailsHeader} onClick={()=>navigate("/productList")}>
+        <div className={style.leftArrow}>
         <svg width="24" height="24" fill="none" viewBox="0 0 32 32">
           <path
             d="M27 16H5M14 7l-9 9 9 9"
@@ -17,6 +18,7 @@ function ProductDetailsCardHeader() {
             fill="none"
           ></path>
         </svg>
+        </div>
         <div className={style.ProductDetailsSearchBtn}>
           <svg width="24" height="24" viewBox="0 0 256 256">
             <path fill="none" d="M0 0h256v256H0z"></path>
@@ -41,6 +43,7 @@ function ProductDetailsCardHeader() {
           </svg>
           <input type="search" placeholder="Search for products" />
         </div>
+        <div className={style.card}>
         <svg width="24" height="24" viewBox="0 0 256 256">
           <path fill="none" d="M0 0h256v256H0z"></path>
           <path
@@ -80,6 +83,7 @@ function ProductDetailsCardHeader() {
             strokeWidth="12px"
           ></path>
         </svg>
+        </div>
       </div>
     </>
   );

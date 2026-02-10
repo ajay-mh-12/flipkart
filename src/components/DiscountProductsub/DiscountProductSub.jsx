@@ -14,7 +14,6 @@ function DiscountProductSub() {
             <SubProduct name="Don't Miss" image={Watches} discount="Special offer"/>
             <SubProduct name="Milton,Cello & more.." image={WaterBottle} discount="From$129"/>
             <SubProduct name="Printed Sarees & more.." image={SareeImage} discount="Under$999" />
-
         </div>
         </div>
             

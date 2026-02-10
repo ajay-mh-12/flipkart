@@ -108,3 +108,12 @@
     margin-left: 25px;
 
 }
+.DesktopFooter{
+    display: none;
+}
+
+@media screen and (min-width:965px) {
+    .DesktopFooter{
+        display: block;
+    }
+}

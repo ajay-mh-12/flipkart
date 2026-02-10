@@ -1,7 +1,7 @@
 .ProductDetailsHeader{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgb(216, 239, 254);
     padding:12px 0px 8px;
     width: 100%;
@@ -25,6 +25,7 @@
 }
 .ProductDetailsSearchBtn{
     position: relative;
+    width: 100%;
 }
 .ProductDetailsSearchBtn svg{
     position: absolute;
@@ -34,4 +35,10 @@
 }
 .ProductDetailsHeader svg{
     margin: 0 8px;
+}
+.leftArrow{
+    margin-right: 8px;
+}
+.card{
+    margin-left: 8px;
 }
