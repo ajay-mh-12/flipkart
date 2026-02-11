@@ -133,19 +133,17 @@ function HeaderProductsCard() {
           case 10001:
             return item.price > price;
             break;
-          default:
+          default:  
             return item;
         }
       });
     }
-
     if(sliderPrice) {
       filtered = filtered.filter((item) => {
         return item.price >= sliderPrice.minPrice && item.price <= sliderPrice.maxPrice;
       })
     }
 
-    
     setProduct(filtered);
   }, [
     brand,
