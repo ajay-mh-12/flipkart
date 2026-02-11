@@ -10,6 +10,7 @@ import mobilePhoto from "./MenuBarBigImage/mobilPhoto.webp"
 import Pokimon from "./MenuBarBigImage/Pokimon.webp"
 import SoapPowder from "./MenuBarBigImage/SoapPowder.webp"
 import washingMachine from "./MenuBarBigImage/washingMachine.webp"
+import { useNavigate } from 'react-router-dom';
 
 
 function MenuBarBig() {
@@ -66,9 +67,10 @@ function MenuBarBig() {
     }
    ]
 
+   const navigate = useNavigate()
     return (
         <>
-        <div className={ StyleBigMenu.MenuBarBigScreen}>
+        <div className={ StyleBigMenu.MenuBarBigScreen} onClick={()=>navigate("/productList")}>
             {MenuBarBig.map((pro)=>{
                 return <div key={pro.id} className={StyleBigMenu.MenuBigScreenElements}><img key={pro.id} src={pro.image} alt="" /><h4>{pro.name}</h4></div>
             })}

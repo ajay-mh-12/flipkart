@@ -6,6 +6,7 @@ import Speaker from "./DesktopImage/Speaker.webp"
 import Tv from "./DesktopImage/Tv.webp"
 import WashingMachin from "./DesktopImage/washingmachin.webp"
 import Waterfilter from "./DesktopImage/WaterFilter.webp"
+import { useNavigate } from "react-router-dom";
 function DesktopCard(){
     const DesktopImage = [
         {
@@ -34,9 +35,11 @@ function DesktopCard(){
         }
     ]
 
+    const navigate = useNavigate();
+
     return(
         <>
-        <div className={Style.DesktopCard}>
+        <div className={Style.DesktopCard} onClick={()=>navigate("/productList")}>
         {DesktopImage.map((pro)=>{
             return <img key={pro.id} src={pro.image} alt="" />
         })}
