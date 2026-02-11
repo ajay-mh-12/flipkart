@@ -4,7 +4,7 @@ import arrow from "./DesktopFilterRatingImage/leftArrow (1).svg"
 import { useState,useContext } from 'react';
 import { ratingFiltercontext } from '../../../App';
 function DesktopFilterRating() {
-    const[open,setOpen] = useState(false)
+    const[open,setOpen] = useState(true)
     const {rateing,setRateing} = useContext(ratingFiltercontext)
     function handleClick(e){
         if(e.target.checked){

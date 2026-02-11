@@ -14,7 +14,7 @@ import DesktopFilterHeadType from "../../DesktopFilterHeadType/DesktopFilterHead
 
 function DesktopFilterHeader(){
     const [open,setOpen] = useState(false)
-    const [click,setClick] = useState(false)
+    const [click,setClick] = useState(true)
     return(
         <>
         <div className={style.filterSide}>

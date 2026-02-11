@@ -4,7 +4,7 @@ import arrow from "./DestopColorImage/leftArrow (1).svg"
 import { useState,useContext } from 'react';
 import { colorFiltercontext } from '../../../App';
 function DesktopColorFilter() {
- const[open,setOpen] = useState(false) 
+ const[open,setOpen] = useState(true) 
  const {color,setColor}= useContext(colorFiltercontext)
  function handleClick(e) {
     if(e.target.checked) {
