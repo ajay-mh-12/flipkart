@@ -5,6 +5,8 @@
     row-gap: 15px;
     background-color: rgba(241, 242, 244, 1.00);
     padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .DesktopCard img{
     width: 100%;
